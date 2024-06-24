@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Email</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function showConfirmation() {
+            document.getElementById('confirmation').classList.remove('hidden');
+            setTimeout(function(){
+                document.getElementById('confirmation').classList.add('hidden');
+                window.location.href = "{% url 'batch_email' %}";
+            }, 3000);
+        }
+
+        function toggleScheduleFields() {
+            var scheduleType = document.getElementById('id_schedule_type').value;
+            var dayOfWeekField = document.getElementById('id_day_of_week').parentElement;
+            var dayOfMonthField = document.getElementById('id_day_of_month').parentElement;
+            if (scheduleType == 'weekly') {
+                dayOfWeekField.style.display = 'block';
+                dayOfMonthField.style.display = 'none';
+            } else if (scheduleType == 'monthly') {
+                dayOfWeekField.style.display = 'none';
+                dayOfMonthField.style.display = 'block';
+            } else {
+                dayOfWeekField.style.display = 'none';
+                dayOfMonthField.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleScheduleFields();
+            document.getElementById('id_schedule_type').addEventListener('change', toggleScheduleFields);
+        });
+    </script>
+</head>
+<body>
+    <h2>Schedule Batch Emails</h2>
+    {% if confirmation_message %}
+    <div id="confirmation" class="alert alert-success hidden">
+        {{ confirmation_message }}
+    </div>
+    <script>
+        showConfirmation();
+    </script>
+    {% endif %}
+    <form method="post" action="{% url 'batch_email' %}">
+        {% csrf_token %}
+        <label for="recipients">Recipients (one email per line):</label><br>
+        <textarea id="recipients" name="recipients" rows="5" required></textarea><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="body">Body:</label><br>
+        <textarea id="body" name="body" rows="10" required></textarea><br><br>
+
+        {{ form.as_p }}
+
+
+
+        <button type="submit">Schedule Emails</button>
+    </form>
+</body>
+</html>

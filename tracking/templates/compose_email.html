@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose Email</title>
+</head>
+<body>
+    <h2>Compose Email</h2>
+    {% if confirmation_message %}
+    <div class="alert alert-success">
+        {{ confirmation_message }}
+    </div>
+    {% endif %}
+    <form method="post" action="{% url 'send_tracked_email_view' %}">
+        {% csrf_token %}
+        <label for="recipient">Recipient:</label><br>
+        <input type="email" id="recipient" name="recipient" required><br><br>
+        
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+        
+        <label for="body">Body:</label><br>
+        <textarea id="body" name="body" rows="10" required></textarea><br><br>
+        
+        <button type="submit">Send Email</button>
+    </form>
+</body>
+</html>
