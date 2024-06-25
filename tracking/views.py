@@ -6,13 +6,16 @@ from django.views.decorators.csrf import csrf_exempt
 from .email_utils import send_tracked_email
 from django.shortcuts import get_object_or_404, redirect
 from .models import Link, LinkClick
-import datetime
 import time
 from django.utils.html import escape
 from .forms import EmailBatchForm
 import threading
 from .models import Email, UnsubscribedUser
 from .tasks import send_batch_emails
+from celery import current_app
+from datetime import timedelta
+from datetime import datetime
+
 
 @csrf_exempt
 def track_email(request, email_id):
@@ -100,10 +103,21 @@ def batch_email_view(request):
             body = request.POST['body']
             for recipient in recipients:
                 email = Email(recipient=recipient, subject=subject, body=body, sent_at=timezone.now())
-                email.save()  # Ensure the email instance is saved
+                email.save()
                 email_batch.emails.add(email)
             email_batch.save()
-            send_batch_emails.delay(email_batch.id)  # Call the Celery task
+            
+            # Calculate delay until send_time
+            now = datetime.now()
+            send_time = datetime.combine(now.date(), form.cleaned_data['send_time'])
+            if send_time <= now:
+                send_time += timedelta(days=1)  # If send_time is in the past, schedule for tomorrow
+            
+            delay_until_send = (send_time - now).total_seconds()
+            
+            # Schedule the task to run at send_time
+            current_app.send_task('tracking.tasks.send_batch_emails', args=[email_batch.id], countdown=delay_until_send)
+            
             return HttpResponse('<html><body><h3>Email batch scheduled successfully!</h3></body></html>')
     else:
         form = EmailBatchForm()
