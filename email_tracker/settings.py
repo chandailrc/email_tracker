@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# ALLOWED_HOSTS = ['1chandailrc1.pythonanywhere.com']
+
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'b28d-2405-201-5009-6022-8fef-7e89-a12e-b610.ngrok-free.app']
 
 # CSRF_TRUSTED_ORIGINS = ['https://b28d-2405-201-5009-6022-8fef-7e89-a12e-b610.ngrok-free.app']
@@ -148,8 +150,10 @@ EMAIL_HOST_PASSWORD = 'sluc bqln soxk xmwr'  # Use your gmail app pass key. Diff
 EMAIL_USE_TLS = True
 
 # Site URL for tracking pixel
-SITE_URL = '127.0.0.1:8000'
-BASE_URL = '127.0.0.1:8000'
+SITE_URL = 'http://127.0.0.1:8000'
+BASE_URL = 'http://127.0.0.1:8000'
+# SITE_URL = 'http://1chandailrc1.pythonanywhere.com'
+# BASE_URL = 'http://1chandailrc1.pythonanywhere.com'
 # SITE_URL = 'https://b28d-2405-201-5009-6022-8fef-7e89-a12e-b610.ngrok-free.app'
 # BASE_URL = 'https://b28d-2405-201-5009-6022-8fef-7e89-a12e-b610.ngrok-free.app'
 

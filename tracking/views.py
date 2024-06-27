@@ -7,13 +7,13 @@ from .email_utils import send_tracked_email
 from django.shortcuts import get_object_or_404, redirect
 from .models import Link, LinkClick
 import time
-from django.utils.html import escape
+# from django.utils.html import escape
 from .forms import EmailBatchForm
-import threading
+# import threading
 from .models import Email, UnsubscribedUser
-from .tasks import send_batch_emails
-from celery import current_app
-from datetime import timedelta
+# from .tasks import send_batch_emails
+# from celery import current_app
+# from datetime import timedelta
 from datetime import datetime
 import random
 
@@ -106,17 +106,6 @@ def send_tracked_email_view(request):
     return render(request, 'compose_email.html')
 
 
-# views.py
-from django.http import HttpResponse
-from django.shortcuts import render
-from .models import EmailBatch
-from .forms import EmailBatchForm
-from .scheduling import schedule_next_batch
-
-from django.http import HttpResponse
-from django.shortcuts import render
-from .models import EmailBatch
-from .forms import EmailBatchForm
 from .scheduling import schedule_next_batch
 
 def batch_email_view(request):
@@ -136,24 +125,65 @@ def batch_email_view(request):
         form = EmailBatchForm()
     return render(request, 'batch_email.html', {'form': form})
 
-# def schedule_next_batch(email_batch):
-#     now = timezone.now()
-#     send_time = datetime.combine(now.date(), email_batch.send_time)
+import json
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
 
-#     if email_batch.schedule_type == 'daily':
-#         if send_time <= now:
-#             send_time += timedelta(days=1)
-#     elif email_batch.schedule_type == 'weekly':
-#         days_ahead = email_batch.day_of_week - now.weekday()
-#         if days_ahead <= 0:
-#             days_ahead += 7
-#         send_time = datetime.combine(now.date() + timedelta(days=days_ahead), email_batch.send_time)
-#     elif email_batch.schedule_type == 'monthly':
-#         next_month = now.replace(day=1) + timedelta(days=32)
-#         next_run = next_month.replace(day=min(email_batch.day_of_month, (next_month.replace(day=1) - timedelta(days=1)).day))
-#         send_time = datetime.combine(next_run.date(), email_batch.send_time)
+def load_emails(request):
+    if request.method == 'POST' and request.FILES.get('json_file'):
+        json_file = request.FILES['json_file']
+        path = default_storage.save('tmp/bulk_emails.json', ContentFile(json_file.read()))
+        
+        with default_storage.open(path) as file:
+            data = json.load(file)
+        
+        emails = []
+        for item in data:
+            email_content = item.get('email', '')
+            subject, _, body = email_content.partition('\n\n')
+            subject = subject.replace('Subject: ', '').strip()
+            emails.append({
+                'recipient': item.get('Business Email'),
+                'subject': subject,
+                'body': body
+            })
+        
+        default_storage.delete(path)
+        
+        return render(request, 'bulk_email.html', {'emails': emails})
+    
+    return render(request, 'bulk_email.html')
 
-#     delay_until_send = (send_time - now).total_seconds()
+def send_bulk_emails(request):
+    if request.method == 'POST':
+        delay_type = request.POST.get('delay_type')
+        delay_value = int(request.POST.get('delay_value', 0))
+        min_delay = int(request.POST.get('min_delay', 0))
+        max_delay = int(request.POST.get('max_delay', 0))
 
-#     # Schedule the task to run at send_time
-#     current_app.send_task('tracking.tasks.send_batch_emails', args=[email_batch.id], countdown=delay_until_send)
+        sent_count = 0
+        index = 0
+        while True:
+            recipient = request.POST.get(f'email_{index}')
+            subject = request.POST.get(f'subject_{index}')
+            body = request.POST.get(f'body_{index}')
+            
+            if not recipient:  # No more emails to process
+                break
+            
+            if recipient and subject and body:
+                success = send_tracked_email(recipient, subject, body)
+                if success:
+                    sent_count += 1
+                
+                if delay_type == 'fixed':
+                    time.sleep(delay_value)
+                elif delay_type == 'random':
+                    time.sleep(random.uniform(min_delay, max_delay))
+            
+            index += 1
+        
+        confirmation_message = f"{sent_count} email(s) sent successfully!"
+        return render(request, 'bulk_email.html', {'confirmation_message': confirmation_message})
+    
+    return redirect('load_emails')

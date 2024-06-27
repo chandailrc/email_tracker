@@ -35,7 +35,6 @@ class UnsubscribedUser(models.Model):
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
-from datetime import datetime, timedelta
 
 class EmailBatch(models.Model):
     SCHEDULE_CHOICES = [
