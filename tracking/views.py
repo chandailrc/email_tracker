@@ -15,6 +15,7 @@ from .tasks import send_batch_emails
 from celery import current_app
 from datetime import timedelta
 from datetime import datetime
+import random
 
 
 @csrf_exempt
@@ -74,24 +75,35 @@ def compose_email_view(request):
 
 def send_tracked_email_view(request):
     if request.method == 'POST':
-        recipient = request.POST.get('recipient')
+        recipients = request.POST.get('recipients').split()  # Split on whitespace
         subject = request.POST.get('subject')
         body = request.POST.get('body')
+        delay_type = request.POST.get('delay_type')
+        delay_value = int(request.POST.get('delay_value', 0))
+        min_delay = int(request.POST.get('min_delay', 0))
+        max_delay = int(request.POST.get('max_delay', 0))
         
-        # Call the send_tracked_email function to send the email
-        send_tracked_email(recipient, subject, body)
+        sent_count = 0
+        for recipient in recipients:
+            recipient = recipient.strip()
+            if recipient:
+                success = send_tracked_email(recipient, subject, body)
+                if success:
+                    sent_count += 1
+                    print(f"Email sent successfully to {recipient}")
+                else:
+                    print(f"Failed to send email to {recipient}")
+                
+                if delay_type == 'fixed':
+                    time.sleep(delay_value)
+                elif delay_type == 'random':
+                    time.sleep(random.uniform(min_delay, max_delay))
         
-        # Display confirmation message
-        confirmation_message = "Email sent successfully!"
-        
-        # Pause for a brief moment (optional)
-        time.sleep(2)  # Pauses for 2 seconds
-        
-        # Redirect back to the compose page after sending email
-        return render(request, 'compose_email.html', {'confirmation_message': escape(confirmation_message)})
+        confirmation_message = f"{sent_count} email(s) sent successfully!"
+        print(confirmation_message)  # Add this line for debugging
+        return render(request, 'compose_email.html', {'confirmation_message': confirmation_message})
     
-    return HttpResponse('Method not allowed', status=405)
-
+    return render(request, 'compose_email.html')
 
 
 # views.py

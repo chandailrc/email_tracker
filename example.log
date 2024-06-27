@@ -207,3 +207,9 @@ INFO:django.utils.autoreload:/home/rahul/conda_ws/django_ws/email_tracker/email_
 WARNING:django.request:Not Found: /favicon.ico
 WARNING:django.request:Not Found: /favicon.ico
 INFO:root:This is debug message
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/home/rahul/conda_ws/django_ws/email_tracker/tracking/views.py changed, reloading.
+INFO:root:This is debug message
+INFO:root:This is debug message
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/home/rahul/conda_ws/django_ws/email_tracker/tracking/email_utils.py changed, reloading.
