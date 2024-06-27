@@ -5,65 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batch Email</title>
     <style>
-        .hidden {
-            display: none;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
-    <script>
-        function showConfirmation() {
-            document.getElementById('confirmation').classList.remove('hidden');
-            setTimeout(function(){
-                document.getElementById('confirmation').classList.add('hidden');
-                window.location.href = "{% url 'batch_email' %}";
-            }, 3000);
-        }
-
-        function toggleScheduleFields() {
-            var scheduleType = document.getElementById('id_schedule_type').value;
-            var dayOfWeekField = document.getElementById('id_day_of_week').parentElement;
-            var dayOfMonthField = document.getElementById('id_day_of_month').parentElement;
-            if (scheduleType == 'weekly') {
-                dayOfWeekField.style.display = 'block';
-                dayOfMonthField.style.display = 'none';
-            } else if (scheduleType == 'monthly') {
-                dayOfWeekField.style.display = 'none';
-                dayOfMonthField.style.display = 'block';
-            } else {
-                dayOfWeekField.style.display = 'none';
-                dayOfMonthField.style.display = 'none';
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            toggleScheduleFields();
-            document.getElementById('id_schedule_type').addEventListener('change', toggleScheduleFields);
-        });
-    </script>
 </head>
 <body>
     <h2>Schedule Batch Emails</h2>
-    {% if confirmation_message %}
-    <div id="confirmation" class="alert alert-success hidden">
-        {{ confirmation_message }}
-    </div>
-    <script>
-        showConfirmation();
-    </script>
-    {% endif %}
     <form method="post" action="{% url 'batch_email' %}">
         {% csrf_token %}
-        <label for="recipients">Recipients (one email per line):</label><br>
-        <textarea id="recipients" name="recipients" rows="5" required></textarea><br><br>
+        <label for="recipients">Recipients (one email per line):</label>
+        <textarea id="recipients" name="recipients" rows="5" required></textarea>
 
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject" required><br><br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
 
-        <label for="body">Body:</label><br>
-        <textarea id="body" name="body" rows="10" required></textarea><br><br>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" rows="10" required></textarea>
 
-        {{ form.as_p }}
+        <label for="id_schedule_type">Schedule Type:</label>
+        {{ form.schedule_type }}
 
+        <label for="id_batch_size">Batch Size:</label>
+        {{ form.batch_size }}
 
+        <label for="id_send_time">Send Time:</label>
+        {{ form.send_time }}
+
+        <label for="id_delay_between_emails">Delay Between Emails (seconds):</label>
+        {{ form.delay_between_emails }}
+
+        <label for="id_delay_between_batches">Delay Between Batches (seconds):</label>
+        {{ form.delay_between_batches }}
+
+        <label for="id_day_of_week">Day of Week (for weekly schedule):</label>
+        {{ form.day_of_week }}
+
+        <label for="id_day_of_month">Day of Month (for monthly schedule):</label>
+        {{ form.day_of_month }}
 
         <button type="submit">Schedule Emails</button>
     </form>

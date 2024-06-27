@@ -43,7 +43,7 @@ def track_link(request, link_id):
     link = get_object_or_404(Link, pk=link_id)
     LinkClick.objects.create(
         link=link,
-        clicked_at=datetime.datetime.now(),
+        clicked_at=datetime.now(),
         ip_address=request.META.get('REMOTE_ADDR'),
         user_agent=request.META.get('HTTP_USER_AGENT')
     )
@@ -92,56 +92,56 @@ def send_tracked_email_view(request):
     
     return HttpResponse('Method not allowed', status=405)
 
+
+
+# views.py
+from django.http import HttpResponse
+from django.shortcuts import render
+from .models import EmailBatch
+from .forms import EmailBatchForm
+from .scheduling import schedule_next_batch
+
+from django.http import HttpResponse
+from django.shortcuts import render
+from .models import EmailBatch
+from .forms import EmailBatchForm
+from .scheduling import schedule_next_batch
+
 def batch_email_view(request):
     if request.method == 'POST':
         form = EmailBatchForm(request.POST)
+
         if form.is_valid():
             email_batch = form.save(commit=False)
+            email_batch.recipients = ','.join(request.POST['recipients'].split())
             email_batch.save()
-            recipients = request.POST['recipients'].split()
-            subject = request.POST['subject']
-            body = request.POST['body']
-            for recipient in recipients:
-                email = Email(recipient=recipient, subject=subject, body=body, sent_at=timezone.now())
-                email.save()
-                email_batch.emails.add(email)
-            email_batch.save()
-            
-            # Calculate delay until send_time
-            now = datetime.now()
-            send_time = datetime.combine(now.date(), form.cleaned_data['send_time'])
-            if send_time <= now:
-                send_time += timedelta(days=1)  # If send_time is in the past, schedule for tomorrow
-            
-            delay_until_send = (send_time - now).total_seconds()
-            
-            # Schedule the task to run at send_time
-            current_app.send_task('tracking.tasks.send_batch_emails', args=[email_batch.id], countdown=delay_until_send)
-            
+
+            # Schedule the initial task
+            schedule_next_batch(email_batch)
+
             return HttpResponse('<html><body><h3>Email batch scheduled successfully!</h3></body></html>')
     else:
         form = EmailBatchForm()
     return render(request, 'batch_email.html', {'form': form})
 
+# def schedule_next_batch(email_batch):
+#     now = timezone.now()
+#     send_time = datetime.combine(now.date(), email_batch.send_time)
 
+#     if email_batch.schedule_type == 'daily':
+#         if send_time <= now:
+#             send_time += timedelta(days=1)
+#     elif email_batch.schedule_type == 'weekly':
+#         days_ahead = email_batch.day_of_week - now.weekday()
+#         if days_ahead <= 0:
+#             days_ahead += 7
+#         send_time = datetime.combine(now.date() + timedelta(days=days_ahead), email_batch.send_time)
+#     elif email_batch.schedule_type == 'monthly':
+#         next_month = now.replace(day=1) + timedelta(days=32)
+#         next_run = next_month.replace(day=min(email_batch.day_of_month, (next_month.replace(day=1) - timedelta(days=1)).day))
+#         send_time = datetime.combine(next_run.date(), email_batch.send_time)
 
-def schedule_emails(batch):
-    def send_batch_emails():
-        for email in batch.emails.all():
-            send_tracked_email(email.recipient, email.subject, email.body)
-            time.sleep(batch.delay_between_emails)
-        time.sleep(batch.delay_between_batches)
+#     delay_until_send = (send_time - now).total_seconds()
 
-    def schedule_next_batch():
-        if batch.send_daily:
-            batch.next_send_time = timezone.now() + timezone.timedelta(days=1)
-        elif batch.send_weekly:
-            batch.next_send_time = timezone.now() + timezone.timedelta(weeks=1)
-        elif batch.send_monthly:
-            batch.next_send_time = timezone.now() + timezone.timedelta(days=30)
-        batch.save()
-        threading.Timer(1, send_batch_emails).start()
-
-    send_batch_emails()
-    if batch.send_daily or batch.send_weekly or batch.send_monthly:
-        threading.Timer(1, schedule_next_batch).start()
+#     # Schedule the task to run at send_time
+#     current_app.send_task('tracking.tasks.send_batch_emails', args=[email_batch.id], countdown=delay_until_send)

@@ -9,16 +9,17 @@ from urllib.parse import urlparse
 from .models import Email, Link
 from django.utils import timezone
 from .models import UnsubscribedUser
-
+import datetime
+import logging
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.INFO)
 
 def send_tracked_email(recipient, subject, body):
-    
-    print(type(body))
-    print(body)
-    
+       
     if UnsubscribedUser.objects.filter(email=recipient).exists():
         print(f"Email not sent to {recipient} as they have unsubscribed.")
         return
+    logging.info('This is debug message')
+    print("email_utils: Time @ database object creation: " + str(datetime.datetime.now().time()))
     
     email = Email.objects.create(recipient=recipient, subject=subject, body=body, sent_at=timezone.now())
     tracking_id = email.id
