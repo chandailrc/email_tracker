@@ -18,7 +18,34 @@ from datetime import datetime
 import random
 
 
-@csrf_exempt
+import logging
+
+logger = logging.getLogger(__name__)
+
+def tracking_pixel(request):
+    email_id = request.GET.get('email_id')
+    timestamp = request.GET.get('timestamp')
+    
+    # Log the email open event with a timestamp
+    logger.info(f"Email {email_id} opened at {timestamp}")
+    print(f"Email {email_id} opened at {timestamp}")
+    
+    email = Email.objects.get(id=email_id)
+    TrackingLog.objects.create(
+        email=email,
+        ip_address=request.META.get('REMOTE_ADDR'),
+        user_agent=request.META.get('HTTP_USER_AGENT'),
+        opened_at=timezone.now()
+    )
+
+    # Return a 1x1 transparent pixel
+    response = HttpResponse(content_type="image/png")
+    response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response['Pragma'] = 'no-cache'
+    response['Expires'] = '0'
+    response.write(b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\x0aIDATx\x9c\x63\x60\x00\x00\x00\x02\x00\x01\xe2!\xbc\x33\x00\x00\x00\x00IEND\xaeB`\x82')
+    return response
+
 def track_email(request, email_id):
     try:
         email = Email.objects.get(id=email_id)

@@ -14,15 +14,11 @@ import datetime
 # logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.INFO)
 
 def send_tracked_email(recipient, subject, body):
-        
     if UnsubscribedUser.objects.filter(email=recipient).exists():
         print(f"Email not sent to {recipient} as they have unsubscribed.")
         return False
 
     try:
-        # logging.info('This is debug message')
-        print("email_utils: Time @ database object creation: " + str(datetime.datetime.now().time()))
-        
         email = Email.objects.create(recipient=recipient, subject=subject, body=body, sent_at=timezone.now())
         tracking_id = email.id
 
@@ -32,15 +28,20 @@ def send_tracked_email(recipient, subject, body):
             link = Link.objects.create(email=email, url=original_url)
             tracked_url = f"{settings.BASE_URL}/track-link/{link.id}/"
             return tracked_url
-
+        
+        timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        
         tracked_body = re.sub(r'http[s]?:\/\/[^\s]*', replace_link, body)
+        html_body = tracked_body.replace('\n', '<br>')  # Convert newlines to <br> tags
+        
+        pixel_url = f"{settings.BASE_URL}/pixel.png?email_id={tracking_id}&timestamp={timestamp}"
 
         email_body = f"""
             <html>
               <head></head>
               <body>
-                <p>{tracked_body}</p>
-                <img src="{settings.BASE_URL}/tracking/{tracking_id}/" alt="tracking pixel" width="1" height="1" style="display:none;">
+                <p>{html_body}</p>
+                <img src="{pixel_url}" alt="tracking pixel" width="1" height="1" style="display:none;">
                 <p>If you wish to unsubscribe, click <a href="{settings.BASE_URL}/unsubscribe/?email={recipient}">here</a>.</p>
               </body>
             </html>
@@ -50,14 +51,15 @@ def send_tracked_email(recipient, subject, body):
         msg['Subject'] = subject
         msg['From'] = settings.EMAIL_HOST_USER
         msg['To'] = recipient
-        msg.attach(MIMEText(body, 'plain'))
+
+        msg.attach(MIMEText(tracked_body, 'plain'))
         msg.attach(MIMEText(email_body, 'html'))
-        
+
         with smtplib.SMTP(settings.EMAIL_HOST, settings.EMAIL_PORT) as server:
             server.starttls()
             server.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
             server.sendmail(settings.EMAIL_HOST_USER, recipient, msg.as_string())
-        
+
         print(f"Email sent successfully to {recipient}")
         return True
     except Exception as e:

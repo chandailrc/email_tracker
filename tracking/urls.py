@@ -10,6 +10,7 @@ urlpatterns = [
     path('compose/', compose_email_view, name='compose_email'),
     path('send-tracked-email/', send_tracked_email_view, name='send_tracked_email_view'),
     path('tracking/<int:email_id>/', track_email, name='track_email'),
+    path('pixel.png', tracking_pixel, name='tracking_pixel'),
     path('dashboard/', dashboard, name='dashboard'),
     path('track-link/<int:link_id>/', track_link, name='track_link'),
     path('unsubscribe/', unsubscribe, name='unsubscribe'),
