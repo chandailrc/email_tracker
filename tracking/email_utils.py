@@ -1,17 +1,16 @@
-# -*- coding: utf-8 -*-
+# custom_email_backend.py
 
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
 import re
 from urllib.parse import urlparse
-from .models import Email, Link
+from .models import Email, Link, UnsubscribedUser
 from django.utils import timezone
-from .models import UnsubscribedUser
 import datetime
-# import logging
-# logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.INFO)
+
+import logging
+
+logger = logging.getLogger(__name__)
 
 def send_tracked_email(recipient, subject, body):
     if UnsubscribedUser.objects.filter(email=recipient).exists():
@@ -19,15 +18,18 @@ def send_tracked_email(recipient, subject, body):
         return False
 
     try:
+        
         email = Email.objects.create(recipient=recipient, subject=subject, body=body, sent_at=timezone.now())
         tracking_id = email.id
+        
+        logger.info(f"email_utils.py: Email db entry created for {recipient} at {timezone.now()}")
 
         def replace_link(match):
             original_url = match.group(0)
             parsed_url = urlparse(original_url)
             link = Link.objects.create(email=email, url=original_url)
             tracked_url = f"{settings.BASE_URL}/track-link/{link.id}/"
-            return tracked_url
+            return f'<a href="{tracked_url}">Link</a>'
         
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
         
@@ -47,25 +49,17 @@ def send_tracked_email(recipient, subject, body):
             </html>
         """
 
-        msg = MIMEMultipart('alternative')
-        msg['Subject'] = subject
-        msg['From'] = settings.EMAIL_HOST_USER
-        msg['To'] = recipient
+        msg = EmailMultiAlternatives(
+            subject=subject,
+            body=tracked_body,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            to=[recipient]
+        )
+        msg.attach_alternative(email_body, "text/html")
+        msg.send()
 
-        msg.attach(MIMEText(tracked_body, 'plain'))
-        msg.attach(MIMEText(email_body, 'html'))
-
-        with smtplib.SMTP(settings.EMAIL_HOST, settings.EMAIL_PORT) as server:
-            server.starttls()
-            server.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
-            server.sendmail(settings.EMAIL_HOST_USER, recipient, msg.as_string())
-
-        print(f"Email sent successfully to {recipient}")
+        print(f"email_utils.py: Email sent successfully to {recipient}")
         return True
     except Exception as e:
-        print(f"Error sending email to {recipient}: {e}")
-        return False        
-        
-        
-        
-
+        print(f"email_utils.py: Error sending email to {recipient}: {e}")
+        return False

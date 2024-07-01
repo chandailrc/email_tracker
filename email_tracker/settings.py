@@ -146,8 +146,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = '1chandailrc1@gmail.com' # Use your personal gmail here
-EMAIL_HOST_PASSWORD = 'sluc bqln soxk xmwr'  # Use your gmail app pass key. Different from your account password
-EMAIL_USE_TLS = True
+EMAIL_HOST_PASSWORD = ''  # Use your gmail app pass key. Different from your account password
+
 
 # Site URL for tracking pixel
 SITE_URL = 'http://127.0.0.1:8000'
@@ -158,11 +158,11 @@ BASE_URL = 'http://127.0.0.1:8000'
 # BASE_URL = 'https://b28d-2405-201-5009-6022-8fef-7e89-a12e-b610.ngrok-free.app'
 
 # Mautic settings
-MAUTIC_BASE_URL = 'https://example.com'
-MAUTIC_PUBLIC_KEY = 'your_public_key'
-MAUTIC_SECRET_KEY = 'your_secret_key'
-MAUTIC_USERNAME = 'your_mautic_username'
-MAUTIC_PASSWORD = 'your_mautic_password'
+# MAUTIC_BASE_URL = 'https://example.com'
+# MAUTIC_PUBLIC_KEY = 'your_public_key'
+# MAUTIC_SECRET_KEY = 'your_secret_key'
+# MAUTIC_USERNAME = 'your_mautic_username'
+# MAUTIC_PASSWORD = 'your_mautic_password'
 
 # email_tracker/settings.py
 
@@ -182,6 +182,34 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Asia/Kolkata'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'debug.log'),
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'tracking': {  # Replace with your actual app name
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
 
 
 

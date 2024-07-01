@@ -2,18 +2,11 @@ from django.http import HttpResponse
 from django.utils import timezone
 from .models import TrackingLog
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
 from .email_utils import send_tracked_email
 from django.shortcuts import get_object_or_404, redirect
 from .models import Link, LinkClick
 import time
-# from django.utils.html import escape
-from .forms import EmailBatchForm
-# import threading
 from .models import Email, UnsubscribedUser
-# from .tasks import send_batch_emails
-# from celery import current_app
-# from datetime import timedelta
 from datetime import datetime
 import random
 
@@ -27,8 +20,7 @@ def tracking_pixel(request):
     timestamp = request.GET.get('timestamp')
     
     # Log the email open event with a timestamp
-    logger.info(f"Email {email_id} opened at {timestamp}")
-    print(f"Email {email_id} opened at {timestamp}")
+    logger.info(f"views.py: Request received for {request.GET.get('email_id')} at {timestamp}")
     
     email = Email.objects.get(id=email_id)
     TrackingLog.objects.create(
@@ -117,9 +109,9 @@ def send_tracked_email_view(request):
                 success = send_tracked_email(recipient, subject, body)
                 if success:
                     sent_count += 1
-                    print(f"Email sent successfully to {recipient}")
+                    print(f"views.py/send_tracked_email_view: Email sent successfully to {recipient}")
                 else:
-                    print(f"Failed to send email to {recipient}")
+                    print(f"views.py/send_tracked_email_view: Failed to send email to {recipient}")
                 
                 if delay_type == 'fixed':
                     time.sleep(delay_value)
