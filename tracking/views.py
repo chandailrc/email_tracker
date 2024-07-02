@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.utils import timezone
-from .models import TrackingLog
+from .models import TrackingLog, TrackingPixelToken
 from django.shortcuts import render
 from .email_utils import send_tracked_email
 from django.shortcuts import get_object_or_404, redirect
@@ -15,28 +15,104 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def tracking_pixel(request):
-    email_id = request.GET.get('email_id')
-    timestamp = request.GET.get('timestamp')
-    
-    # Log the email open event with a timestamp
-    logger.info(f"views.py: Request received for {request.GET.get('email_id')} at {timestamp}")
-    
-    email = Email.objects.get(id=email_id)
-    TrackingLog.objects.create(
-        email=email,
-        ip_address=request.META.get('REMOTE_ADDR'),
-        user_agent=request.META.get('HTTP_USER_AGENT'),
-        opened_at=timezone.now()
-    )
+import base64
 
-    # Return a 1x1 transparent pixel
-    response = HttpResponse(content_type="image/png")
-    response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
-    response['Pragma'] = 'no-cache'
-    response['Expires'] = '0'
-    response.write(b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\x0aIDATx\x9c\x63\x60\x00\x00\x00\x02\x00\x01\xe2!\xbc\x33\x00\x00\x00\x00IEND\xaeB`\x82')
-    return response
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]  # Take the first IP in the list
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
+
+def tracking_pixel(request, token):
+    
+    logger.info(f"views.py/PIXEL: Request received from {request}.")
+    return handle_tracking(request, token, is_pixel=True)
+
+def tracking_css(request, token):
+    
+    logger.info(f"views.py/CSS: Request received from {request}")
+    return handle_tracking(request, token, is_pixel=False)
+
+def handle_tracking(request, token, is_pixel):
+    try:
+        pixel_token = TrackingPixelToken.objects.get(token=token)
+               
+        TrackingLog.objects.create(
+            email=pixel_token.email,
+            ip_address=get_client_ip(request),
+            user_agent=request.META.get('HTTP_USER_AGENT'),
+            opened_at=timezone.now(),
+            # is_expired_open=pixel_token.is_expired(),
+            tracking_type='pixel' if is_pixel else 'css'
+        )
+        
+        if is_pixel:
+            # Serve a 1x1 transparent PNG
+            png_data = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\x0aIDATx\x9c\x63\x60\x00\x00\x00\x02\x00\x01\xe2!\xbc\x33\x00\x00\x00\x00IEND\xaeB`\x82'
+           
+            # Encode the PNG data to base64
+            # base64_png = base64.b64encode(png_data).decode('utf-8')
+           
+            # Return a 1x1 transparent pixel
+            response = HttpResponse(content_type="image/png")
+            response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+            response['Pragma'] = 'no-cache'
+            response['Expires'] = '0'
+            response.write(png_data)  # Write the raw PNG data, not the base64 encoded version
+           
+            # Delete the token after use to prevent reuse
+            # pixel_token.delete()
+           
+            return response
+        else:
+            # Serve an empty CSS file
+            response = HttpResponse(content_type="text/css")
+            response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+            response['Pragma'] = 'no-cache'
+            response['Expires'] = '0'
+            response.write("")  # Write the raw PNG data, not the base64 encoded version
+            return response
+    
+    except TrackingPixelToken.DoesNotExist:
+        return HttpResponse("Not found", status=404)
+
+# def tracking_pixel(request, token):
+#     # Get the TrackingPixelToken or return 404 if not found
+#     pixel_token = get_object_or_404(TrackingPixelToken, token=token) #, expires_at__gt=timezone.now())
+    
+#     email = pixel_token.email
+    
+#     # Log the email open event with a timestamp
+#     logger.info(f"views.py: Request received for email {email.id} at {timezone.now()}")
+    
+#     TrackingLog.objects.create(
+#         email=email,
+#         ip_address=request.META.get('REMOTE_ADDR'),
+#         user_agent=request.META.get('HTTP_USER_AGENT'),
+#         opened_at=timezone.now()
+#     )
+    
+#     # 1x1 transparent PNG pixel
+#     png_data = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\x0aIDATx\x9c\x63\x60\x00\x00\x00\x02\x00\x01\xe2!\xbc\x33\x00\x00\x00\x00IEND\xaeB`\x82'
+    
+#     # Encode the PNG data to base64
+#     # base64_png = base64.b64encode(png_data).decode('utf-8')
+    
+#     # Return a 1x1 transparent pixel
+#     response = HttpResponse(content_type="image/png")
+#     response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+#     response['Pragma'] = 'no-cache'
+#     response['Expires'] = '0'
+#     response.write(png_data)  # Write the raw PNG data, not the base64 encoded version
+    
+#     # Delete the token after use to prevent reuse
+#     # pixel_token.delete()
+    
+#     return response
 
 def track_email(request, email_id):
     try:

@@ -141,13 +141,27 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATIC_ROOT = '/home/1chandailrc1/email_tracker/static'
 
 # Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = '1chandailrc1@gmail.com' # Use your personal gmail here
-EMAIL_HOST_PASSWORD = ''  # Use your gmail app pass key. Different from your account password
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = '1chandailrc1@gmail.com' # Use your personal gmail here
+# EMAIL_HOST_PASSWORD = ''  # Use your gmail app pass key. Different from your account password
 
+
+
+# MAILHOG
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = False
+
+# X FORWARDED
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Site URL for tracking pixel
 SITE_URL = 'http://127.0.0.1:8000'

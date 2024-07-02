@@ -1,2 +1,443 @@
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 1478
+"GET /compose/ HTTP/1.1" 200 2174
+email_utils.py: Email db entry created for mukulchandail@yahoo.com, at 2024-07-01 10:06:06.599697+00:00
+email_utils.py: Email db entry created for mukulchandail@gmail.com at 2024-07-01 10:06:09.059574+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+Not Found: /favicon.ico
+email_utils.py: Email db entry created for mukulchandail@gmail.com at 2024-07-01 10:12:27.568310+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 3618
+email_utils.py: Email db entry created for singhal1959a@gmail.com at 2024-07-01 10:14:22.257891+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+email_utils.py: Email db entry created for mukulchandail@gmail.com at 2024-07-01 10:14:42.049119+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for 0chandailrc0@gmail.com at 2024-07-01 11:20:36.394967+00:00
+Error sending email to 0chandailrc0@gmail.com: (421, b'Domain sandbox07f5efe922854693bff5e3bf140b6921.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.')
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 4869
+"GET /dashboard/ HTTP/1.1" 200 4869
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@hotmail.com at 2024-07-01 12:12:54.157663+00:00
+urls.py: PIXEL Request received for email with id: 7
+views.py: Request received for 7 at 20240701174254
+"GET /pixel.png?email_id=7&timestamp=20240701174254 HTTP/1.1" 200 92
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 5819
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 5819
+Email db entry created for chandailrc@hotmail.com at 2024-07-01 12:15:21.178122+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 6359
+"GET /dashboard/ HTTP/1.1" 200 6359
+"GET /dashboard/ HTTP/1.1" 200 6359
+"GET /dashboard/ HTTP/1.1" 200 6359
+"GET /dashboard/ HTTP/1.1" 200 6359
+"GET /dashboard/ HTTP/1.1" 200 6359
+"GET /dashboard/ HTTP/1.1" 200 6359
+urls.py: PIXEL Request received for email with id: 8
+views.py: Request received for 8 at 20240701174521
+"GET /pixel.png?email_id=8&timestamp=20240701174521 HTTP/1.1" 200 67
+"GET /dashboard/ HTTP/1.1" 200 6825
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /compose/ HTTP/1.1" 200 2174
+"GET /dashboard/ HTTP/1.1" 200 6825
+Email db entry created for chandailrc@hotmail.com at 2024-07-01 12:17:00.117077+00:00
+urls.py: PIXEL Request received for email with id: 9
+views.py: Request received for 9 at 20240701174700
+"GET /pixel.png?email_id=9&timestamp=20240701174700 HTTP/1.1" 200 92
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 7768
+"GET /dashboard/ HTTP/1.1" 200 7768
+"GET /dashboard/ HTTP/1.1" 200 7768
+"GET /dashboard/ HTTP/1.1" 200 7768
+"GET /dashboard/ HTTP/1.1" 200 7768
+"GET /dashboard/ HTTP/1.1" 200 7768
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for me@me.com at 2024-07-01 12:23:53.701368+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+Not Found: /favicon.ico
+"GET /dashboard/ HTTP/1.1" 200 8286
+Not Found: /favicon.ico
+Not Found: /pixel_base64.png
+"GET /pixel_base64.png?email_id=10&timestamp=20240701175353 HTTP/1.1" 404 3476
+"GET /dashboard/ HTTP/1.1" 200 8286
+"GET /dashboard/ HTTP/1.1" 200 8286
+"GET /dashboard/ HTTP/1.1" 200 8286
+Not Found: /pixel_base64.png
+"GET /pixel_base64.png?email_id=10&timestamp=20240701175353 HTTP/1.1" 404 3476
+"GET /dashboard/ HTTP/1.1" 200 8286
+"GET /dashboard/ HTTP/1.1" 200 8286
+"GET /dashboard/ HTTP/1.1" 200 8286
+"GET /dashboard/ HTTP/1.1" 200 8286
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@gmail.com at 2024-07-01 12:33:59.881292+00:00
+urls.py: PIXEL Request received for email with id: 11
+views.py: Request received for 11 at 20240701180359
+"GET /pixel.png?email_id=11&timestamp=20240701180359 HTTP/1.1" 200 67
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+Email db entry created for chandailrc@gmail.com at 2024-07-01 12:36:03.835765+00:00
+urls.py: PIXEL Request received for email with id: 12
+views.py: Request received for 12 at 20240701180603
+"GET /pixel.png?email_id=12&timestamp=20240701180603 HTTP/1.1" 200 67
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/email_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@gmail.com at 2024-07-01 12:59:34.838717+00:00
+urls.py: PIXEL Request received for email with id: 13
+views.py: Request received for 13 at 20240701182934
+"GET /pixel.png?email_id=13&timestamp=20240701182934 HTTP/1.1" 200 92
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 11146
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@gmail.com at 2024-07-01 13:00:02.766799+00:00
+urls.py: PIXEL Request received for email with id: 14
+views.py: Request received for 14 at 20240701183002
+"GET /pixel.png?email_id=14&timestamp=20240701183002 HTTP/1.1" 200 67
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 12094
+"GET /dashboard/ HTTP/1.1" 200 12094
+"GET /dashboard/ HTTP/1.1" 200 12094
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@gmail.com at 2024-07-01 13:01:05.090276+00:00
+urls.py: PIXEL Request received for email with id: 15
+views.py: Request received for 15 at 20240701183105
+"GET /pixel.png?email_id=15&timestamp=20240701183105 HTTP/1.1" 200 67
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 13042
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@gmail.com at 2024-07-01 13:03:11.303483+00:00
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 13573
+"GET /dashboard/ HTTP/1.1" 200 13573
+urls.py: PIXEL Request received for email with id: 16
+views.py: Request received for 16 at 20240701183311
+"GET /pixel.png?email_id=16&timestamp=20240701183311 HTTP/1.1" 200 92
+"GET /dashboard/ HTTP/1.1" 200 14039
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+urls.py: PIXEL Request received for email with id: 16
+views.py: Request received for 16 at 20240701183311
+"GET /pixel.png?email_id=16&timestamp=20240701183311 HTTP/1.1" 200 92
+"GET /dashboard/ HTTP/1.1" 200 14458
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+"GET /dashboard/ HTTP/1.1" 200 14458
+Not Found: /favicon.ico
+"GET /send-tracked-email/ HTTP/1.1" 200 2174
+Not Found: /favicon.ico
+"GET /send-tracked-email/ HTTP/1.1" 200 2174
+"GET /send-tracked-email/ HTTP/1.1" 200 2174
+Not Found: /favicon.ico
+"GET /send-tracked-email/ HTTP/1.1" 200 2174
+"GET /compose/ HTTP/1.1" 200 2174
+"GET /compose/ HTTP/1.1" 200 2174
+Internal Server Error: /send-tracked-email/
+Traceback (most recent call last):
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py", line 122, in send_tracked_email_view
+    success = send_tracked_email(recipient, subject, body)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py", line 25, in send_tracked_email
+    if UnsubscribedUser.objects.filter(email=recipient).exists():
+NameError: name 'UnsubscribedUser' is not defined
+"POST /send-tracked-email/ HTTP/1.1" 500 78704
+Not Found: /favicon.ico
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@hotmail.com at 2024-07-02 09:56:53.262881+00:00
+Error sending email to chandailrc@hotmail.com: no such table: tracking_trackingpixeltoken
+Internal Server Error: /send-tracked-email/
+Traceback (most recent call last):
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: tracking_trackingpixeltoken
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py", line 47, in send_tracked_email
+    pixel_url = generate_tracking_pixel_url(tracking_id)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py", line 18, in generate_tracking_pixel_url
+    TrackingPixelToken.objects.create(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: tracking_trackingpixeltoken
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: tracking_trackingpixeltoken
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py", line 122, in send_tracked_email_view
+    success = send_tracked_email(recipient, subject, body)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py", line 74, in send_tracked_email
+    email.delete()  # Remove the database entry if email sending fails
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/base.py", line 1118, in delete
+    return collector.delete()
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/deletion.py", line 467, in delete
+    count = qs._raw_delete(using=self.using)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/query.py", line 1155, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: tracking_trackingpixeltoken
+"POST /send-tracked-email/ HTTP/1.1" 500 237003
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Email db entry created for chandailrc@hotmail.com at 2024-07-02 09:57:28.462480+00:00
+Error sending email to chandailrc@hotmail.com: [Errno 111] Connection refused
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+Not Found: /favicon.ico
+Email db entry created for chandailrc@hotmail.com at 2024-07-02 09:58:49.378962+00:00
+Email sent successfully to chandailrc@hotmail.com
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 15556
+views.py: Request received for email 19 at 2024-07-02 09:59:36.930423+00:00
+"GET /pixel/3941c32325a64f15986a38a9698afa99.png HTTP/1.1" 200 67
+"GET /dashboard/ HTTP/1.1" 200 16022
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 16022
+"GET /dashboard/ HTTP/1.1" 200 16022
+"GET /dashboard/ HTTP/1.1" 200 16022
+Not Found: /pixel/3941c32325a64f15986a38a9698afa99.png
+"GET /pixel/3941c32325a64f15986a38a9698afa99.png HTTP/1.1" 404 2961
+"GET /dashboard/ HTTP/1.1" 200 16022
+"GET /dashboard/ HTTP/1.1" 200 16022
+"GET /dashboard/ HTTP/1.1" 200 16022
+Not Found: /pixel/3941c32325a64f15986a38a9698afa99.png
+"GET /pixel/3941c32325a64f15986a38a9698afa99.png HTTP/1.1" 404 2961
+Not Found: /pixel/3941c32325a64f15986a38a9698afa99.png
+"GET /pixel/3941c32325a64f15986a38a9698afa99.png HTTP/1.1" 404 2961
+"GET /dashboard/ HTTP/1.1" 200 16022
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-02 10:31:39.005224+00:00
+email_utils.py: Email sent successfully to chandailrc@hotmail.com
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 16574
+"GET /dashboard/ HTTP/1.1" 200 16574
+views.py: Request received for email 20 at 2024-07-02 10:31:53.582448+00:00
+"GET /pixel/426044b4245b42fc977464c9776717e2.png HTTP/1.1" 200 67
+"GET /dashboard/ HTTP/1.1" 200 17040
+"GET /dashboard/ HTTP/1.1" 200 17040
+views.py: Request received for email 20 at 2024-07-02 10:32:07.623776+00:00
+"GET /pixel/426044b4245b42fc977464c9776717e2.png HTTP/1.1" 200 67
+"GET /dashboard/ HTTP/1.1" 200 17459
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 17459
+Not Found: /favicon.ico
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 11:30:48.089277+00:00
+email_utils.py: Error sending email to chandailrc@gmail.com: too many values to unpack (expected 2)
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 11:31:54.946271+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 17998
+"GET /dashboard/ HTTP/1.1" 200 17998
+Internal Server Error: /track/93de05a8be04416b94e68228ff6f4327/style.css
+Traceback (most recent call last):
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py", line 27, in tracking_css
+    return handle_tracking(request, token, is_pixel=False)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py", line 38, in handle_tracking
+    is_expired_open=pixel_token.is_expired(),
+AttributeError: 'TrackingPixelToken' object has no attribute 'is_expired'
+"GET /track/93de05a8be04416b94e68228ff6f4327/style.css HTTP/1.1" 500 76040
+Internal Server Error: /track/93de05a8be04416b94e68228ff6f4327/pixel.png
+Traceback (most recent call last):
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rahul/anaconda3/envs/tracker/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py", line 24, in tracking_pixel
+    return handle_tracking(request, token, is_pixel=True)
+  File "/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py", line 38, in handle_tracking
+    is_expired_open=pixel_token.is_expired(),
+AttributeError: 'TrackingPixelToken' object has no attribute 'is_expired'
+"GET /track/93de05a8be04416b94e68228ff6f4327/pixel.png HTTP/1.1" 500 75960
+"GET /dashboard/ HTTP/1.1" 200 17998
+"GET /dashboard/ HTTP/1.1" 200 17998
+"GET /dashboard/ HTTP/1.1" 200 17998
+"GET /dashboard/ HTTP/1.1" 200 17998
+"GET /dashboard/ HTTP/1.1" 200 17998
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 17998
+Not Found: /favicon.ico
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 11:33:50.961067+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+Not Found: /favicon.ico
+"GET /dashboard/ HTTP/1.1" 200 18537
+"GET /track/38d540c5c02144c6bb59fddea427e082/style.css HTTP/1.1" 200 0
+"GET /track/38d540c5c02144c6bb59fddea427e082/pixel.png HTTP/1.1" 200 67
+"GET /dashboard/ HTTP/1.1" 200 19422
+"GET /dashboard/ HTTP/1.1" 200 20702
+"GET /dashboard/ HTTP/1.1" 200 20814
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 20814
+email_utils.py: Email db entry created for testing@testing.com at 2024-07-02 12:49:33.815116+00:00
+email_utils.py: Email sent successfully to testing@testing.com
+"POST /send-tracked-email/ HTTP/1.1" 200 2252
+"GET /dashboard/ HTTP/1.1" 200 21339
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/style.css'>
+"GET /track/fae10d9e0f2f4ebf93e52bf4b371fbfb/style.css HTTP/1.1" 200 0
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/pixel.png'>.
+"GET /track/fae10d9e0f2f4ebf93e52bf4b371fbfb/pixel.png HTTP/1.1" 200 67
+"GET /dashboard/ HTTP/1.1" 200 22602
