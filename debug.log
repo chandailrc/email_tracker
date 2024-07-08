@@ -411,33 +411,1271 @@ Not Found: /favicon.ico
 "GET /dashboard/ HTTP/1.1" 200 19422
 "GET /dashboard/ HTTP/1.1" 200 20702
 "GET /dashboard/ HTTP/1.1" 200 20814
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/urls.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/views.py changed, reloading.
-Watching for file changes with StatReloader
-/home/rahul/conda_ws/django_ws/email_tracker_barebones/email_tracker/tracking/urls.py changed, reloading.
-Watching for file changes with StatReloader
-"GET /dashboard/ HTTP/1.1" 200 20814
-email_utils.py: Email db entry created for testing@testing.com at 2024-07-02 12:49:33.815116+00:00
-email_utils.py: Email sent successfully to testing@testing.com
-"POST /send-tracked-email/ HTTP/1.1" 200 2252
-"GET /dashboard/ HTTP/1.1" 200 21339
-urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/style.css'>
-views.py/CSS: Request received from <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/style.css'>
-"GET /track/fae10d9e0f2f4ebf93e52bf4b371fbfb/style.css HTTP/1.1" 200 0
-urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/pixel.png'>
-views.py/PIXEL: Request received from <WSGIRequest: GET '/track/fae10d9e0f2f4ebf93e52bf4b371fbfb/pixel.png'>.
-"GET /track/fae10d9e0f2f4ebf93e52bf4b371fbfb/pixel.png HTTP/1.1" 200 67
-"GET /dashboard/ HTTP/1.1" 200 22602
+Invalid HTTP_HOST header: '1chandailrc1.pythonanywhere.com'. You may need to add '1chandailrc1.pythonanywhere.com' to ALLOWED_HOSTS.
+Bad Request: /dashboard/
+Invalid HTTP_HOST header: '1chandailrc1.pythonanywhere.com'. You may need to add '1chandailrc1.pythonanywhere.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /
+email_utils.py: Email db entry created for anubhavyadavdec10@gmail.com at 2024-07-02 11:51:18.668085+00:00
+email_utils.py: Error sending email to anubhavyadavdec10@gmail.com: [Errno 111] Connection refused
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /
+email_utils.py: Email db entry created for anubhavyadavdec10@gmail.com at 2024-07-02 11:54:03.758797+00:00
+email_utils.py: Email sent successfully to anubhavyadavdec10@gmail.com
+email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-02 11:58:15.333347+00:00
+email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 12:13:54.474003+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-02 12:16:34.530175+00:00
+email_utils.py: Email sent successfully to chandailrc@hotmail.com
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 27
+    urlpatterns = [
+                  ^
+SyntaxError: '[' was never closed
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 12:33:59.349272+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+urls.py: PIXEL Request received for email with id: None
+email_utils.py/PIXEL: Request received from None at None.
+Not Found: /
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 12:40:46.994577+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+urls.py: PIXEL Request received for email with id: None
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/fa778bb1fd7a4592bef856396477308e/pixel.png'>.
+email_utils.py: Email db entry created for anubhavyadavdec10@gmail.com at 2024-07-02 12:50:57.493154+00:00
+email_utils.py: Email sent successfully to anubhavyadavdec10@gmail.com
+Not Found: /favicon.ico
+Not Found: /pixel.png
+email_utils.py: Email db entry created for chandai@uwaterloo.ca at 2024-07-02 16:12:41.443866+00:00
+email_utils.py: Email sent successfully to chandai@uwaterloo.ca
+Not Found: /favicon.ico
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/53ca407c7d044763a50a3cd60a957ebb/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/53ca407c7d044763a50a3cd60a957ebb/pixel.png'>.
+email_utils.py: Email db entry created for rchandai@uwaterloo.ca at 2024-07-02 16:13:56.612052+00:00
+email_utils.py: Email sent successfully to rchandai@uwaterloo.ca
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/f20c0e3735154fa584aad0d8c0d503f8/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/f20c0e3735154fa584aad0d8c0d503f8/pixel.png'>.
+email_utils.py: Email db entry created for mukulchandail@yahoo.com at 2024-07-02 16:17:45.147172+00:00
+email_utils.py: Email sent successfully to mukulchandail@yahoo.com
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/50f1d4e63e5c4ab48128a14e045dbc87/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/50f1d4e63e5c4ab48128a14e045dbc87/pixel.png'>.
+Not Found: /favicon.ico
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 16:45:10.624537+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/096ea6e1473c4e9fa46a83dba93a36ea/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/096ea6e1473c4e9fa46a83dba93a36ea/pixel.png'>.
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/096ea6e1473c4e9fa46a83dba93a36ea/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/096ea6e1473c4e9fa46a83dba93a36ea/style.css'>
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/096ea6e1473c4e9fa46a83dba93a36ea/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/096ea6e1473c4e9fa46a83dba93a36ea/pixel.png'>.
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 16:48:24.786362+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/style.css'>
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>.
+Not Found: /
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-02 17:01:25.666420+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/style.css'>
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+Not Found: /favicon.ico
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/style.css'>
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/f267716e74cf4bee9b8776855ea6e76b/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/style.css'>
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/0ddd7d83d0e34b4a83d6802b143b8365/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/0ddd7d83d0e34b4a83d6802b143b8365/pixel.png'>.
+Not Found: /favicon.ico
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/0ddd7d83d0e34b4a83d6802b143b8365/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/0ddd7d83d0e34b4a83d6802b143b8365/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/0ddd7d83d0e34b4a83d6802b143b8365/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/0ddd7d83d0e34b4a83d6802b143b8365/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/4a52f50b3c234bdc9b773ec9f4299161/pixel.png'>.
+urls.py: PIXEL Request received for email with id: <WSGIRequest: GET '/track/50f1d4e63e5c4ab48128a14e045dbc87/pixel.png'>
+views.py/PIXEL: Request received from <WSGIRequest: GET '/track/50f1d4e63e5c4ab48128a14e045dbc87/pixel.png'>.
+urls.py: CSS Request received for email with id: <WSGIRequest: GET '/track/50f1d4e63e5c4ab48128a14e045dbc87/style.css'>
+views.py/CSS: Request received from <WSGIRequest: GET '/track/50f1d4e63e5c4ab48128a14e045dbc87/style.css'>
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-03 04:03:44.192036+00:00
+email_utils.py: Email sent successfully to chandailrc@hotmail.com
+urls.py: PIXEL Request received for email with id: 49.43.99.29
+views.py/PIXEL: Request received from 49.43.99.29.
+urls.py: PIXEL Request received for email with id: 49.43.99.29
+views.py/PIXEL: Request received from 49.43.99.29.
+Not Found: /
+Not Found: /
+email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-03 06:07:06.378512+00:00
+email_utils.py: Email sent successfully to chandailrc@gmail.com
+Not Found: /
+2024-07-03 11:40:08 - django.request - WARNING - Not Found: /
+2024-07-03 11:40:55 - tracking.urls - INFO - urls.py: PIXEL Request received for email from ip: 66.249.84.161
+2024-07-03 11:40:55 - tracking.views - INFO - views.py/PIXEL: Request received from 66.249.84.161.
+2024-07-03 11:40:57 - tracking.urls - INFO - urls.py: PIXEL Request received for email from ip: 66.249.84.174
+2024-07-03 11:40:57 - tracking.views - INFO - views.py/PIXEL: Request received from 66.249.84.174.
+2024-07-03 11:54:19 - django.request - WARNING - Not Found: /
+2024-07-03 11:54:31 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-03 11:54:45 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.160
+2024-07-03 11:54:45 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.160.
+2024-07-03 18:38:33 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-03 19:26:30 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-03 13:56:30.958582+00:00
+2024-07-03 19:26:32 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@hotmail.com
+2024-07-03 19:26:42 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@hotmail.com from ip: 49.43.99.98
+2024-07-03 19:26:42 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@hotmail.com from 49.43.99.98.
+2024-07-03 19:26:42 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@hotmail.com from ip: 49.43.99.98
+2024-07-03 19:26:42 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@hotmail.com from 49.43.99.98.
+2024-07-03 19:26:48 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-03 20:43:13 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.174
+2024-07-03 20:43:13 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.174.
+2024-07-03 23:02:29 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@hotmail.com from ip: 49.43.99.98
+2024-07-03 23:02:29 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@hotmail.com from 49.43.99.98.
+2024-07-04 14:35:37 - django.request - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 4, in <module>
+    from .views import *
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 13, in <module>
+    import settings
+ModuleNotFoundError: No module named 'settings'
+2024-07-04 21:17:29 - django.request - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 4, in <module>
+    from .views import *
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 13, in <module>
+    import settings
+ModuleNotFoundError: No module named 'settings'
+2024-07-04 21:18:22 - django.request - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 4, in <module>
+    from .views import *
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 13, in <module>
+    import settings
+ModuleNotFoundError: No module named 'settings'
+2024-07-04 22:43:47 - django.request - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 4, in <module>
+    from .views import *
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 13, in <module>
+    import settings
+ModuleNotFoundError: No module named 'settings'
+2024-07-04 22:43:47 - django.request - ERROR - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 4, in <module>
+    from .views import *
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 13, in <module>
+    import settings
+ModuleNotFoundError: No module named 'settings'
+2024-07-04 22:50:19 - django.request - ERROR - Internal Server Error: /send-tracked-email/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 649, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 696, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/email_tracker/urls.py", line 23, in <module>
+    path('', include('tracking.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 4, in <module>
+    from .views import *
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 13, in <module>
+    import settings
+ModuleNotFoundError: No module named 'settings'
+2024-07-04 22:51:20 - django.request - WARNING - Not Found: /
+2024-07-04 22:51:30 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-04 17:21:30.281604+00:00
+2024-07-04 22:51:31 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-04 22:52:01 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.160
+2024-07-04 22:52:01 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.160.
+2024-07-05 11:12:32 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:17:35 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 08:47:35.040302+00:00
+2024-07-05 14:17:36 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 14:17:36 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 08:47:36.353900+00:00
+2024-07-05 14:17:37 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 14:17:37 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-05 08:47:37.506366+00:00
+2024-07-05 14:17:39 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-05 14:17:39 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-05 08:47:39.147825+00:00
+2024-07-05 14:17:41 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@hotmail.com
+2024-07-05 14:17:41 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mukulchandail@gmail.com at 2024-07-05 08:47:41.045869+00:00
+2024-07-05 14:17:42 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mukulchandail@gmail.com
+2024-07-05 14:17:42 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mukulchandail@yahoo.com at 2024-07-05 08:47:42.732419+00:00
+2024-07-05 14:17:43 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mukulchandail@yahoo.com
+2024-07-05 14:17:44 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal1959a@gmail.com at 2024-07-05 08:47:44.016447+00:00
+2024-07-05 14:17:45 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal1959a@gmail.com
+2024-07-05 14:17:45 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal24a@gmail.com at 2024-07-05 08:47:45.260866+00:00
+2024-07-05 14:17:46 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal24a@gmail.com
+2024-07-05 14:17:46 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 08:47:46.956851+00:00
+2024-07-05 14:17:48 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 14:17:48 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@yahoo.com at 2024-07-05 08:47:48.108525+00:00
+2024-07-05 14:17:49 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@yahoo.com
+2024-07-05 14:17:49 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@aol.com at 2024-07-05 08:47:49.322468+00:00
+2024-07-05 14:17:50 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@aol.com
+2024-07-05 14:17:50 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@outlook.com at 2024-07-05 08:47:50.520500+00:00
+2024-07-05 14:17:52 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@outlook.com
+2024-07-05 14:17:52 - tracking.urls - INFO - urls.py: PIXEL Request received for email singhal24a@gmail.com from ip: 74.125.151.198
+2024-07-05 14:17:52 - tracking.views - INFO - views.py/PIXEL: Request received for singhal24a@gmail.com from 74.125.151.198.
+2024-07-05 14:17:52 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.197
+2024-07-05 14:17:52 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.197.
+2024-07-05 14:17:52 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:18:03 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:23:12 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.174
+2024-07-05 14:23:12 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.174.
+2024-07-05 14:23:14 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.160
+2024-07-05 14:23:14 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.160.
+2024-07-05 14:23:23 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:23:27 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.174
+2024-07-05 14:23:27 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.174.
+2024-07-05 14:23:31 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:23:40 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.174
+2024-07-05 14:23:40 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.174.
+2024-07-05 14:23:43 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:24:11 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@hotmail.com from ip: 49.43.99.98
+2024-07-05 14:24:11 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@hotmail.com from 49.43.99.98.
+2024-07-05 14:24:16 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:24:34 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@hotmail.com from ip: 49.43.99.98
+2024-07-05 14:24:34 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@hotmail.com from 49.43.99.98.
+2024-07-05 14:24:40 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:25:12 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.161
+2024-07-05 14:25:12 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.161.
+2024-07-05 14:25:14 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 14:25:14 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 14:25:17 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:30:25 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.160
+2024-07-05 14:30:25 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.160.
+2024-07-05 14:30:25 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.174
+2024-07-05 14:30:25 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.174.
+2024-07-05 14:40:26 - django.request - WARNING - Not Found: /
+2024-07-05 14:40:54 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 09:10:54.735861+00:00
+2024-07-05 14:40:56 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 14:40:58 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.198
+2024-07-05 14:40:58 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.198.
+2024-07-05 14:40:58 - tracking.views - INFO - views.py/handle_tracking: <WSGIRequest: GET '/track/87ce01d5aed046ce811c4f55595da493/pixel.png'>.
+2024-07-05 14:41:01 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 14:43:01 - django.request - WARNING - Not Found: /
+2024-07-05 14:43:21 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 09:13:21.419527+00:00
+2024-07-05 14:43:22 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 14:43:24 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.198
+2024-07-05 14:43:24 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.198.
+2024-07-05 14:43:24 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/1656d2d61f984d25b24e414a138528bf/pixel.png', 'PATH_INFO': '/track/1656d2d61f984d25b24e414a138528bf/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '47104', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '74.125.151.198', 'HTTP_X_FORWARDED_FOR': '74.125.151.198', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_ACCEPT_LANGUAGE': 'en-US', 'HTTP_REFERER': 'http://mail.google.com/', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_FROM': '', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246 Mozilla/5.0', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'wsgi.input': <uwsgi._Input object at 0x7fc3d1b989b0>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fc3d184c040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 15:04:28 - django.request - WARNING - Not Found: /
+2024-07-05 15:04:59 - django.request - WARNING - Not Found: /
+2024-07-05 15:05:04 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-05 09:35:04.265506+00:00
+2024-07-05 15:05:05 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-05 15:05:46 - django.request - ERROR - Internal Server Error: /meta_dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: meta_dashboard() missing 1 required positional argument: 'email'
+2024-07-05 15:09:59 - django.request - WARNING - Not Found: /
+2024-07-05 15:10:10 - django.request - ERROR - Internal Server Error: /meta_dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: meta_dashboard() missing 1 required positional argument: 'email'
+2024-07-05 15:10:37 - django.request - WARNING - Not Found: /
+2024-07-05 15:10:39 - django.request - ERROR - Internal Server Error: /meta_dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 29, in meta_dashboard
+    logs = RequestLog.objects.filter(email=email).order_by('-timestamp')
+NameError: name 'RequestLog' is not defined
+2024-07-05 15:11:24 - django.request - WARNING - Not Found: /
+2024-07-05 15:11:31 - django.request - ERROR - Internal Server Error: /meta_dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 29, in meta_dashboard
+    logs = RequestLog.objects.filter(email=email).order_by('-timestamp')
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1377, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1187, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1692, in names_to_path
+    pathinfos = field.get_path_info(filtered_relation)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/fields/related.py", line 811, in get_path_info
+    opts = self.remote_field.model._meta
+AttributeError: 'str' object has no attribute '_meta'
+2024-07-05 15:39:37 - django.request - WARNING - Not Found: /
+2024-07-05 15:39:52 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 10:09:52.332019+00:00
+2024-07-05 15:39:53 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 15:40:04 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.161
+2024-07-05 15:40:04 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.161.
+2024-07-05 15:40:05 - django.request - ERROR - Internal Server Error: /track/eda81c41933f4fc9b526ae4f4c94974a/pixel.png
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 17, in wrapper
+    return view_func(request, token, *args, **kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 45, in tracking_pixel
+    return handle_tracking(request, token, is_pixel=True)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 66, in handle_tracking
+    RequestLog.objects.create(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1620, in execute_sql
+    for sql, params in self.as_sql():
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1547, in as_sql
+    value_rows = [
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1548, in <listcomp>
+    [
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1549, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1487, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 910, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 905, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/fields/json.py", line 96, in get_prep_value
+    return json.dumps(value, cls=self.encoder)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type _Input is not JSON serializable
+2024-07-05 15:40:15 - django.request - ERROR - Internal Server Error: /meta_dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: tracking_requestlog
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 32, in meta_dashboard
+    return render(request, 'meta_dashboard.html', {'email_logs': email_logs})
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: tracking_requestlog
+2024-07-05 15:40:31 - django.request - ERROR - Internal Server Error: /meta_dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: tracking_requestlog
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 32, in meta_dashboard
+    return render(request, 'meta_dashboard.html', {'email_logs': email_logs})
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: tracking_requestlog
+2024-07-05 15:41:30 - django.request - WARNING - Not Found: /
+2024-07-05 15:45:30 - tracking.urls - ERROR - urls.py: CSS Request received with invalid token c08a3760aa9d401795ce3d8db1b32c3c from ip: 49.43.99.98
+2024-07-05 15:45:30 - django.request - ERROR - Internal Server Error: /track/c08a3760aa9d401795ce3d8db1b32c3c/style.css
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 27, in wrapper
+    return view_func(request, token, *args, **kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 48, in tracking_css
+    recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+tracking.models.TrackingPixelToken.DoesNotExist: TrackingPixelToken matching query does not exist.
+2024-07-05 15:45:30 - tracking.urls - ERROR - urls.py: PIXEL Request received with invalid token c08a3760aa9d401795ce3d8db1b32c3c from ip: 49.43.99.98
+2024-07-05 15:45:30 - django.request - ERROR - Internal Server Error: /track/c08a3760aa9d401795ce3d8db1b32c3c/pixel.png
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 17, in wrapper
+    return view_func(request, token, *args, **kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 43, in tracking_pixel
+    recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+tracking.models.TrackingPixelToken.DoesNotExist: TrackingPixelToken matching query does not exist.
+2024-07-05 15:45:45 - tracking.urls - ERROR - urls.py: CSS Request received with invalid token c08a3760aa9d401795ce3d8db1b32c3c from ip: 49.43.99.98
+2024-07-05 15:45:45 - django.request - ERROR - Internal Server Error: /track/c08a3760aa9d401795ce3d8db1b32c3c/style.css
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 27, in wrapper
+    return view_func(request, token, *args, **kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 48, in tracking_css
+    recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+tracking.models.TrackingPixelToken.DoesNotExist: TrackingPixelToken matching query does not exist.
+2024-07-05 15:45:45 - tracking.urls - ERROR - urls.py: PIXEL Request received with invalid token c08a3760aa9d401795ce3d8db1b32c3c from ip: 49.43.99.98
+2024-07-05 15:45:45 - django.request - ERROR - Internal Server Error: /track/c08a3760aa9d401795ce3d8db1b32c3c/pixel.png
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/urls.py", line 17, in wrapper
+    return view_func(request, token, *args, **kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 43, in tracking_pixel
+    recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+tracking.models.TrackingPixelToken.DoesNotExist: TrackingPixelToken matching query does not exist.
+2024-07-05 15:49:04 - django.request - WARNING - Not Found: /
+2024-07-05 15:49:25 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-05 10:19:25.019422+00:00
+2024-07-05 15:49:26 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@hotmail.com
+2024-07-05 15:49:35 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@hotmail.com from ip: 49.43.99.98
+2024-07-05 15:49:35 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@hotmail.com from 49.43.99.98.
+2024-07-05 15:49:35 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/91954ebaf4b04c4b8ce6394f3045dd13/pixel.png', 'PATH_INFO': '/track/91954ebaf4b04c4b8ce6394f3045dd13/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '47368', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0', 'HTTP_ACCEPT': 'image/avif,image/webp,*/*', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_REFERER': 'https://outlook.live.com/', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_PRIORITY': 'u=4', 'wsgi.input': <uwsgi._Input object at 0x7f9c6c754850>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f9c6c748040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 15:49:46 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 15:49:46 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 15:49:46 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/7e1b335a246645258af4c492115b577f/pixel.png', 'PATH_INFO': '/track/7e1b335a246645258af4c492115b577f/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '40568', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '66.249.84.160', 'HTTP_X_FORWARDED_FOR': '66.249.84.160', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'wsgi.input': <uwsgi._Input object at 0x7f9c6c756b50>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f9c6c748040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 15:51:45 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@yahoo.com from ip: 180.222.115.51
+2024-07-05 15:51:45 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@yahoo.com from 180.222.115.51.
+2024-07-05 15:51:45 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/91ba5cc6d30446809b4a8de071e74b72/pixel.png', 'PATH_INFO': '/track/91ba5cc6d30446809b4a8de071e74b72/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '42030', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '180.222.115.51', 'HTTP_X_FORWARDED_FOR': '180.222.115.51', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_USER_AGENT': 'YahooMailProxy; https://help.yahoo.com/kb/yahoo-mail-proxy-SLN28749.html', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_ACCEPT_ENCODING': 'gzip', 'wsgi.input': <uwsgi._Input object at 0x7f9c6c756b30>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f9c6c748040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:19:32 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 10:49:32.356209+00:00
+2024-07-05 16:19:33 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 16:19:33 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@yahoo.com at 2024-07-05 10:49:33.593515+00:00
+2024-07-05 16:19:34 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@yahoo.com
+2024-07-05 16:19:34 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@aol.com at 2024-07-05 10:49:34.849835+00:00
+2024-07-05 16:19:36 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@aol.com
+2024-07-05 16:19:36 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@outlook.com at 2024-07-05 10:49:36.473126+00:00
+2024-07-05 16:19:37 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@outlook.com
+2024-07-05 16:19:37 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.197
+2024-07-05 16:19:37 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.197.
+2024-07-05 16:19:37 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/2923927a7f004990b6177698b527043e/pixel.png', 'PATH_INFO': '/track/2923927a7f004990b6177698b527043e/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '55248', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '74.125.151.197', 'HTTP_X_FORWARDED_FOR': '74.125.151.197', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_ACCEPT_LANGUAGE': 'en-US', 'HTTP_REFERER': 'http://mail.google.com/', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_FROM': '', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246 Mozilla/5.0', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'wsgi.input': <uwsgi._Input object at 0x7f9c6c757f70>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f9c6c748040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:19:54 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@yahoo.com from ip: 180.222.114.201
+2024-07-05 16:19:54 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@yahoo.com from 180.222.114.201.
+2024-07-05 16:19:54 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/91ba5cc6d30446809b4a8de071e74b72/pixel.png', 'PATH_INFO': '/track/91ba5cc6d30446809b4a8de071e74b72/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '50728', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '180.222.114.201', 'HTTP_X_FORWARDED_FOR': '180.222.114.201', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_USER_AGENT': 'YahooMailProxy; https://help.yahoo.com/kb/yahoo-mail-proxy-SLN28749.html', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_ACCEPT_ENCODING': 'gzip', 'wsgi.input': <uwsgi._Input object at 0x7f9c6c757eb0>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f9c6c748040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:20:03 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.161
+2024-07-05 16:20:03 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.161.
+2024-07-05 16:20:03 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/7e1b335a246645258af4c492115b577f/pixel.png', 'PATH_INFO': '/track/7e1b335a246645258af4c492115b577f/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '42126', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '66.249.84.161', 'HTTP_X_FORWARDED_FOR': '66.249.84.161', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'wsgi.input': <uwsgi._Input object at 0x7f9c6c5a8eb0>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f9c6c748040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:26:11 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestsai@outlook.com at 2024-07-05 10:56:11.254196+00:00
+2024-07-05 16:26:12 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestsai@outlook.com
+2024-07-05 16:30:19 - django.request - WARNING - Not Found: /
+2024-07-05 16:30:37 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestsai@outlook.com at 2024-07-05 11:00:37.181760+00:00
+2024-07-05 16:30:38 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestsai@outlook.com
+2024-07-05 16:36:36 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 5y7k9_hk@temporary-mail.net at 2024-07-05 11:06:36.741514+00:00
+2024-07-05 16:36:37 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 5y7k9_hk@temporary-mail.net
+2024-07-05 16:36:37 - tracking.email_utils - INFO - email_utils.py: Email db entry created for dicahuv.soqalu@jollyfree.com at 2024-07-05 11:06:37.806005+00:00
+2024-07-05 16:36:39 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to dicahuv.soqalu@jollyfree.com
+2024-07-05 16:36:39 - tracking.email_utils - INFO - email_utils.py: Email db entry created for gerard@yemenfo.com at 2024-07-05 11:06:39.081045+00:00
+2024-07-05 16:36:40 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to gerard@yemenfo.com
+2024-07-05 16:36:40 - tracking.email_utils - INFO - email_utils.py: Email db entry created for lamoruze@pelagius.net at 2024-07-05 11:06:40.908126+00:00
+2024-07-05 16:36:42 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to lamoruze@pelagius.net
+2024-07-05 16:36:42 - tracking.email_utils - INFO - email_utils.py: Email db entry created for afnbsiebm@yomail.info at 2024-07-05 11:06:42.288368+00:00
+2024-07-05 16:36:43 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to afnbsiebm@yomail.info
+2024-07-05 16:36:43 - tracking.email_utils - INFO - email_utils.py: Email db entry created for jixamo8511@carspure.com at 2024-07-05 11:06:43.692101+00:00
+2024-07-05 16:36:44 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to jixamo8511@carspure.com
+2024-07-05 16:36:45 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestersai@maildrop.cc at 2024-07-05 11:06:45.008870+00:00
+2024-07-05 16:36:46 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestersai@maildrop.cc
+2024-07-05 16:36:46 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mtkzvf@vobau.net at 2024-07-05 11:06:46.375410+00:00
+2024-07-05 16:36:47 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mtkzvf@vobau.net
+2024-07-05 16:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mtkzvf@vobau.net from ip: 74.125.151.197
+2024-07-05 16:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mtkzvf@vobau.net from 74.125.151.197.
+2024-07-05 16:36:49 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/4f79d809285b4d5daa95d7b2dc12f7bb/pixel.png', 'PATH_INFO': '/track/4f79d809285b4d5daa95d7b2dc12f7bb/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '54666', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '74.125.151.197', 'HTTP_X_FORWARDED_FOR': '74.125.151.197', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_ACCEPT_LANGUAGE': 'en-US', 'HTTP_REFERER': 'http://mail.google.com/', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_FROM': '', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246 Mozilla/5.0', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'wsgi.input': <uwsgi._Input object at 0x7fcfb471df30>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:38:25 - tracking.urls - INFO - urls.py: PIXEL Request received for email 5y7k9_hk@temporary-mail.net from ip: 49.43.99.98
+2024-07-05 16:38:25 - tracking.views - INFO - views.py/PIXEL: Request received for 5y7k9_hk@temporary-mail.net from 49.43.99.98.
+2024-07-05 16:38:25 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/e12ba4e819b244c79bf535e1c9130635/pixel.png', 'PATH_INFO': '/track/e12ba4e819b244c79bf535e1c9130635/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '48948', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://www.temporary-mail.net/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b6770>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:38:46 - tracking.urls - INFO - urls.py: PIXEL Request received for email dicahuv.soqalu@jollyfree.com from ip: 49.43.99.98
+2024-07-05 16:38:46 - tracking.views - INFO - views.py/PIXEL: Request received for dicahuv.soqalu@jollyfree.com from 49.43.99.98.
+2024-07-05 16:38:46 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/d99e3448dbaa49efada0d199fa93800e/pixel.png', 'PATH_INFO': '/track/d99e3448dbaa49efada0d199fa93800e/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '39264', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://tempmail.email/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b6710>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:38:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email 5y7k9_hk@temporary-mail.net from ip: 49.43.99.98
+2024-07-05 16:38:49 - tracking.views - INFO - views.py/PIXEL: Request received for 5y7k9_hk@temporary-mail.net from 49.43.99.98.
+2024-07-05 16:38:49 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/e12ba4e819b244c79bf535e1c9130635/pixel.png', 'PATH_INFO': '/track/e12ba4e819b244c79bf535e1c9130635/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '39870', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://www.temporary-mail.net/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb471df30>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:39:05 - tracking.urls - INFO - urls.py: PIXEL Request received for email gerard@yemenfo.com from ip: 49.43.99.98
+2024-07-05 16:39:05 - tracking.views - INFO - views.py/PIXEL: Request received for gerard@yemenfo.com from 49.43.99.98.
+2024-07-05 16:39:05 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/d36c62231dc7456db653da9be539727a/pixel.png', 'PATH_INFO': '/track/d36c62231dc7456db653da9be539727a/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '40254', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://www.emailondeck.com/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b67f0>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:39:06 - tracking.urls - INFO - urls.py: PIXEL Request received for email lamoruze@pelagius.net from ip: 49.43.99.98
+2024-07-05 16:39:06 - tracking.views - INFO - views.py/PIXEL: Request received for lamoruze@pelagius.net from 49.43.99.98.
+2024-07-05 16:39:06 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/e07c77158ef647668746f191c8a4e570/pixel.png', 'PATH_INFO': '/track/e07c77158ef647668746f191c8a4e570/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '40706', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b6450>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:39:21 - tracking.urls - INFO - urls.py: PIXEL Request received for email jixamo8511@carspure.com from ip: 49.43.99.98
+2024-07-05 16:39:21 - tracking.views - INFO - views.py/PIXEL: Request received for jixamo8511@carspure.com from 49.43.99.98.
+2024-07-05 16:39:21 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/72f9f3a5fb404ea2a3bad43b3b93da8f/pixel.png', 'PATH_INFO': '/track/72f9f3a5fb404ea2a3bad43b3b93da8f/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '33030', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://temp-mail.org/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b6710>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:39:25 - tracking.urls - INFO - urls.py: PIXEL Request received for email spamtestersai@maildrop.cc from ip: 49.43.99.98
+2024-07-05 16:39:25 - tracking.views - INFO - views.py/PIXEL: Request received for spamtestersai@maildrop.cc from 49.43.99.98.
+2024-07-05 16:39:25 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/0e0750d8e369487eab35a6918424320b/pixel.png', 'PATH_INFO': '/track/0e0750d8e369487eab35a6918424320b/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '52410', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://maildrop.cc/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb2f10130>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:39:59 - tracking.urls - INFO - urls.py: PIXEL Request received for email afnbsiebm@yomail.info from ip: 94.130.108.80
+2024-07-05 16:39:59 - tracking.views - INFO - views.py/PIXEL: Request received for afnbsiebm@yomail.info from 94.130.108.80.
+2024-07-05 16:39:59 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '0', 'REQUEST_URI': '/track/5945107d5d8a416aa363e9a74fa5ff8f/pixel.png', 'PATH_INFO': '/track/5945107d5d8a416aa363e9a74fa5ff8f/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '33692', 'SERVER_PORT': '80', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '94.130.108.80', 'HTTP_X_FORWARDED_FOR': '94.130.108.80', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_CONTENT_LENGTH': '0', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_USER_AGENT': 'Mozilla/5.0 (DropMail.me mail client proxy)', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b67f0>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'http', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 16:40:43 - tracking.urls - INFO - urls.py: PIXEL Request received for email jixamo8511@carspure.com from ip: 49.43.99.98
+2024-07-05 16:40:43 - tracking.views - INFO - views.py/PIXEL: Request received for jixamo8511@carspure.com from 49.43.99.98.
+2024-07-05 16:40:43 - tracking.views - INFO - views.py/handle_tracking: {'QUERY_STRING': '', 'REQUEST_METHOD': 'GET', 'CONTENT_TYPE': '', 'CONTENT_LENGTH': '', 'REQUEST_URI': '/track/72f9f3a5fb404ea2a3bad43b3b93da8f/pixel.png', 'PATH_INFO': '/track/72f9f3a5fb404ea2a3bad43b3b93da8f/pixel.png', 'DOCUMENT_ROOT': '/usr/local/openresty/nginx/html', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTPS': 'on', 'REMOTE_ADDR': '10.0.0.20', 'REMOTE_PORT': '39930', 'SERVER_PORT': '443', 'SERVER_NAME': '1chandailrc1.pythonanywhere.com', 'SCRIPT_NAME': '', 'HTTP_X_REAL_IP': '49.43.99.98', 'HTTP_X_FORWARDED_FOR': '49.43.99.98', 'HTTP_HOST': '1chandailrc1.pythonanywhere.com', 'HTTP_CONNECTION': 'upgrade', 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0', 'HTTP_SEC_CH_UA_PLATFORM': '"Linux"', 'HTTP_ACCEPT': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_SEC_FETCH_DEST': 'image', 'HTTP_REFERER': 'https://temp-mail.org/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'wsgi.input': <uwsgi._Input object at 0x7fcfb30b7ef0>, 'wsgi.file_wrapper': <built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors': <uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7fcfb30a8040>, 'wsgi.run_once': False, 'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme': 'https', 'uwsgi.version': b'2.0.20', 'uwsgi.node': b'green-liveweb11'}.
+2024-07-05 17:14:52 - django.request - WARNING - Not Found: /
+2024-07-05 17:15:06 - django.request - WARNING - Not Found: /
+2024-07-05 17:15:48 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mtkzvf@vobau.net at 2024-07-05 11:45:48.951413+00:00
+2024-07-05 17:15:50 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mtkzvf@vobau.net
+2024-07-05 17:15:53 - tracking.urls - INFO - urls.py: PIXEL Request received for email mtkzvf@vobau.net from ip: 74.125.151.197
+2024-07-05 17:15:53 - tracking.views - INFO - views.py/PIXEL: Request received for mtkzvf@vobau.net from 74.125.151.197.
+2024-07-05 17:15:53 - tracking.views - INFO - views.py/handle_tracking: Request received within 10 secs. Potential prefetching. Abandoning request!
+2024-07-05 17:15:53 - django.request - WARNING - Not Found: /track/0df46d0839d142acb9e03867dc4a30b3/pixel.png
+2024-07-05 17:16:30 - django.request - WARNING - Not Found: /
+2024-07-05 17:17:49 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 11:47:49.391362+00:00
+2024-07-05 17:17:50 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 17:17:53 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 17:17:53 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 17:18:20 - django.request - WARNING - Not Found: /
+2024-07-05 17:18:31 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 11:48:31.908619+00:00
+2024-07-05 17:18:32 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 17:18:36 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 17:18:36 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 17:18:36 - tracking.views - INFO - views.py/handle_tracking: Request received within 10 secs. Potential prefetching. Abandoning request!
+2024-07-05 17:18:36 - django.request - WARNING - Not Found: /track/db35842d820d400186999bf91ce3be37/pixel.png
+2024-07-05 17:18:53 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.174
+2024-07-05 17:18:53 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.174.
+2024-07-05 17:18:55 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 17:18:55 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 17:19:08 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 17:19:08 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 17:19:26 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 17:19:26 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 17:19:28 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 17:19:28 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 17:21:34 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.174
+2024-07-05 17:21:34 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.174.
+2024-07-05 17:21:36 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.174
+2024-07-05 17:21:36 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.174.
+2024-07-05 17:21:38 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.174
+2024-07-05 17:21:38 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.174.
+2024-07-05 17:21:40 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.174
+2024-07-05 17:21:40 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.174.
+2024-07-05 17:22:45 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 11:52:45.463416+00:00
+2024-07-05 17:22:46 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 17:22:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.198
+2024-07-05 17:22:49 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.198.
+2024-07-05 17:22:49 - tracking.views - INFO - views.py/handle_tracking: Request received within 10 secs. Potential prefetching. Abandoning request!
+2024-07-05 17:22:49 - django.request - WARNING - Not Found: /track/6236c58fc2e440e28d295a932ce00a1a/pixel.png
+2024-07-05 17:22:58 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 17:22:58 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 17:23:00 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.161
+2024-07-05 17:23:00 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.161.
+2024-07-05 17:55:10 - django.request - WARNING - Not Found: /
+2024-07-05 17:55:34 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 12:25:34.894677+00:00
+2024-07-05 17:55:36 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 17:55:40 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 17:55:40 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 17:56:57 - django.request - WARNING - Not Found: /
+2024-07-05 17:57:07 - django.request - WARNING - Not Found: /
+2024-07-05 17:57:16 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 12:27:16.366880+00:00
+2024-07-05 17:57:17 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 17:57:19 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 17:57:19 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 17:57:19 - tracking.views - INFO - views.py/handle_tracking: First request received within 5 secs. Potential prefetching. Abandoning request!
+2024-07-05 17:57:19 - django.request - WARNING - Not Found: /track/d854b4f4c82540489e816481dd89d87d/pixel.png
+2024-07-05 17:58:20 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.174
+2024-07-05 17:58:20 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.174.
+2024-07-05 17:58:22 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 66.249.84.160
+2024-07-05 17:58:22 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 66.249.84.160.
+2024-07-05 17:58:22 - tracking.views - INFO - views.py/handle_tracking: Request received within 2 secs. Random fetching. Abandoning request!
+2024-07-05 17:58:22 - django.request - WARNING - Not Found: /track/d854b4f4c82540489e816481dd89d87d/pixel.png
+2024-07-05 18:21:07 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 12:51:07.556932+00:00
+2024-07-05 18:21:08 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 18:21:08 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-05 12:51:08.992819+00:00
+2024-07-05 18:21:10 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-05 18:21:10 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-05 12:51:10.739705+00:00
+2024-07-05 18:21:12 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@hotmail.com
+2024-07-05 18:21:12 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mukulchandail@gmail.com at 2024-07-05 12:51:12.086194+00:00
+2024-07-05 18:21:13 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mukulchandail@gmail.com
+2024-07-05 18:21:13 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mukulchandail@yahoo.com at 2024-07-05 12:51:13.262705+00:00
+2024-07-05 18:21:14 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mukulchandail@yahoo.com
+2024-07-05 18:21:14 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal1959a@gmail.com at 2024-07-05 12:51:14.963396+00:00
+2024-07-05 18:21:16 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal1959a@gmail.com
+2024-07-05 18:21:16 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal24a@gmail.com at 2024-07-05 12:51:16.151368+00:00
+2024-07-05 18:21:17 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal24a@gmail.com
+2024-07-05 18:21:17 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 12:51:17.906001+00:00
+2024-07-05 18:21:19 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 18:21:19 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@yahoo.com at 2024-07-05 12:51:19.237502+00:00
+2024-07-05 18:21:20 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@yahoo.com
+2024-07-05 18:21:20 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@aol.com at 2024-07-05 12:51:20.370380+00:00
+2024-07-05 18:21:21 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@aol.com
+2024-07-05 18:21:21 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@outlook.com at 2024-07-05 12:51:21.819995+00:00
+2024-07-05 18:21:23 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@outlook.com
+2024-07-05 18:21:23 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestsai@outlook.com at 2024-07-05 12:51:23.182062+00:00
+2024-07-05 18:21:24 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestsai@outlook.com
+2024-07-05 18:21:24 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 5y7k9_hk@temporary-mail.net at 2024-07-05 12:51:24.838363+00:00
+2024-07-05 18:21:25 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 5y7k9_hk@temporary-mail.net
+2024-07-05 18:21:26 - tracking.email_utils - INFO - email_utils.py: Email db entry created for dicahuv.soqalu@jollyfree.com at 2024-07-05 12:51:26.002294+00:00
+2024-07-05 18:21:27 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to dicahuv.soqalu@jollyfree.com
+2024-07-05 18:21:27 - tracking.email_utils - INFO - email_utils.py: Email db entry created for gerard@yemenfo.com at 2024-07-05 12:51:27.248790+00:00
+2024-07-05 18:21:28 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to gerard@yemenfo.com
+2024-07-05 18:21:28 - tracking.email_utils - INFO - email_utils.py: Email db entry created for lamoruze@pelagius.net at 2024-07-05 12:51:28.573664+00:00
+2024-07-05 18:21:30 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to lamoruze@pelagius.net
+2024-07-05 18:21:30 - tracking.email_utils - INFO - email_utils.py: Email db entry created for fivfpbqzg@emltmp.com at 2024-07-05 12:51:30.303965+00:00
+2024-07-05 18:21:32 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to fivfpbqzg@emltmp.com
+2024-07-05 18:21:32 - tracking.email_utils - INFO - email_utils.py: Email db entry created for jixamo8511@carspure.com at 2024-07-05 12:51:32.128219+00:00
+2024-07-05 18:21:33 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to jixamo8511@carspure.com
+2024-07-05 18:21:33 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestersai@maildrop.cc at 2024-07-05 12:51:33.519595+00:00
+2024-07-05 18:21:35 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestersai@maildrop.cc
+2024-07-05 18:21:35 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mtkzvf@vobau.net at 2024-07-05 12:51:35.249340+00:00
+2024-07-05 18:21:36 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mtkzvf@vobau.net
+2024-07-05 18:21:36 - tracking.urls - INFO - urls.py: PIXEL Request received for email singhal24a@gmail.com from ip: 74.125.151.199
+2024-07-05 18:21:36 - tracking.views - INFO - views.py/PIXEL: Request received for singhal24a@gmail.com from 74.125.151.199.
+2024-07-05 18:21:36 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 18:21:36 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 18:21:37 - tracking.urls - INFO - urls.py: PIXEL Request received for email mtkzvf@vobau.net from ip: 74.125.151.197
+2024-07-05 18:21:37 - tracking.views - INFO - views.py/PIXEL: Request received for mtkzvf@vobau.net from 74.125.151.197.
+2024-07-05 18:21:37 - tracking.views - INFO - views.py/handle_tracking: First request received within 5 secs. Potential prefetching. Abandoning request!
+2024-07-05 18:21:37 - django.request - WARNING - Not Found: /track/dcef9dda95f1406582175f244d387dca/pixel.png
+2024-07-05 18:33:28 - django.request - WARNING - Not Found: /
+2024-07-05 18:34:12 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 13:04:12.101258+00:00
+2024-07-05 18:34:13 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 18:34:13 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-05 13:04:13.322520+00:00
+2024-07-05 18:34:14 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-05 18:34:14 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-05 13:04:14.364486+00:00
+2024-07-05 18:34:15 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@hotmail.com
+2024-07-05 18:34:15 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mukulchandail@gmail.com at 2024-07-05 13:04:15.947250+00:00
+2024-07-05 18:34:17 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mukulchandail@gmail.com
+2024-07-05 18:34:17 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mukulchandail@yahoo.com at 2024-07-05 13:04:17.535948+00:00
+2024-07-05 18:34:19 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mukulchandail@yahoo.com
+2024-07-05 18:34:19 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal1959a@gmail.com at 2024-07-05 13:04:19.298961+00:00
+2024-07-05 18:34:21 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal1959a@gmail.com
+2024-07-05 18:34:21 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal24a@gmail.com at 2024-07-05 13:04:21.071457+00:00
+2024-07-05 18:34:22 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal24a@gmail.com
+2024-07-05 18:34:22 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 13:04:22.467848+00:00
+2024-07-05 18:34:23 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 18:34:23 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@yahoo.com at 2024-07-05 13:04:23.899881+00:00
+2024-07-05 18:34:25 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@yahoo.com
+2024-07-05 18:34:25 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@aol.com at 2024-07-05 13:04:25.246642+00:00
+2024-07-05 18:34:26 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@aol.com
+2024-07-05 18:34:26 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@outlook.com at 2024-07-05 13:04:26.947098+00:00
+2024-07-05 18:34:28 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@outlook.com
+2024-07-05 18:34:28 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestsai@outlook.com at 2024-07-05 13:04:28.441753+00:00
+2024-07-05 18:34:30 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestsai@outlook.com
+2024-07-05 18:34:30 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 5y7k9_hk@temporary-mail.net at 2024-07-05 13:04:30.209320+00:00
+2024-07-05 18:34:31 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 5y7k9_hk@temporary-mail.net
+2024-07-05 18:34:31 - tracking.email_utils - INFO - email_utils.py: Email db entry created for dicahuv.soqalu@jollyfree.com at 2024-07-05 13:04:31.640361+00:00
+2024-07-05 18:34:33 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to dicahuv.soqalu@jollyfree.com
+2024-07-05 18:34:33 - tracking.email_utils - INFO - email_utils.py: Email db entry created for gerard@yemenfo.com at 2024-07-05 13:04:33.202832+00:00
+2024-07-05 18:34:34 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to gerard@yemenfo.com
+2024-07-05 18:34:34 - tracking.email_utils - INFO - email_utils.py: Email db entry created for lamoruze@pelagius.net at 2024-07-05 13:04:34.684267+00:00
+2024-07-05 18:34:36 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to lamoruze@pelagius.net
+2024-07-05 18:34:36 - tracking.email_utils - INFO - email_utils.py: Email db entry created for fivfpbqzg@emltmp.com at 2024-07-05 13:04:36.805443+00:00
+2024-07-05 18:34:37 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to fivfpbqzg@emltmp.com
+2024-07-05 18:34:37 - tracking.email_utils - INFO - email_utils.py: Email db entry created for jixamo8511@carspure.com at 2024-07-05 13:04:37.881658+00:00
+2024-07-05 18:34:39 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to jixamo8511@carspure.com
+2024-07-05 18:34:39 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestersai@maildrop.cc at 2024-07-05 13:04:39.487181+00:00
+2024-07-05 18:34:41 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestersai@maildrop.cc
+2024-07-05 18:34:41 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mtkzvf@vobau.net at 2024-07-05 13:04:41.059285+00:00
+2024-07-05 18:34:42 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mtkzvf@vobau.net
+2024-07-05 18:34:42 - tracking.urls - INFO - urls.py: PIXEL Request received for email singhal24a@gmail.com from ip: 74.125.151.197
+2024-07-05 18:34:42 - tracking.views - INFO - views.py/PIXEL: Request received for singhal24a@gmail.com from 74.125.151.197.
+2024-07-05 18:34:42 - tracking.views - INFO - views.py/handle_tracking: Current time: {curr_time} | Mail sent: {mail.sent_at} | Difference: {time_difference}
+2024-07-05 18:34:42 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.198
+2024-07-05 18:34:42 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.198.
+2024-07-05 18:34:42 - tracking.views - INFO - views.py/handle_tracking: Current time: {curr_time} | Mail sent: {mail.sent_at} | Difference: {time_difference}
+2024-07-05 18:34:44 - tracking.urls - INFO - urls.py: PIXEL Request received for email mtkzvf@vobau.net from ip: 74.125.151.197
+2024-07-05 18:34:44 - tracking.views - INFO - views.py/PIXEL: Request received for mtkzvf@vobau.net from 74.125.151.197.
+2024-07-05 18:34:44 - tracking.views - INFO - views.py/handle_tracking: Current time: {curr_time} | Mail sent: {mail.sent_at} | Difference: {time_difference}
+2024-07-05 18:34:44 - tracking.views - WARNING - views.py/handle_tracking: First request received for {recipient} with email_id {email_id} within 3 secs. Potential prefetching. Abandoning request!
+2024-07-05 18:34:44 - django.request - WARNING - Not Found: /track/976d1adf87ed4d47ad86c6486ce122f6/pixel.png
+2024-07-05 18:36:36 - django.request - WARNING - Not Found: /
+2024-07-05 18:37:05 - django.request - WARNING - Not Found: /
+2024-07-05 18:37:08 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 13:07:08.434462+00:00
+2024-07-05 18:37:09 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 18:37:09 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-05 13:07:09.580938+00:00
+2024-07-05 18:37:11 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-05 18:37:11 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@hotmail.com at 2024-07-05 13:07:11.561975+00:00
+2024-07-05 18:37:12 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@hotmail.com
+2024-07-05 18:37:12 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal1959a@gmail.com at 2024-07-05 13:07:12.837828+00:00
+2024-07-05 18:37:14 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal1959a@gmail.com
+2024-07-05 18:37:14 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal24a@gmail.com at 2024-07-05 13:07:14.711203+00:00
+2024-07-05 18:37:16 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal24a@gmail.com
+2024-07-05 18:37:16 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 13:07:16.479960+00:00
+2024-07-05 18:37:17 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 18:37:17 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@yahoo.com at 2024-07-05 13:07:17.601342+00:00
+2024-07-05 18:37:19 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@yahoo.com
+2024-07-05 18:37:19 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@aol.com at 2024-07-05 13:07:19.378101+00:00
+2024-07-05 18:37:21 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@aol.com
+2024-07-05 18:37:21 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@outlook.com at 2024-07-05 13:07:21.267610+00:00
+2024-07-05 18:37:22 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@outlook.com
+2024-07-05 18:37:22 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestsai@outlook.com at 2024-07-05 13:07:22.711403+00:00
+2024-07-05 18:37:24 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestsai@outlook.com
+2024-07-05 18:37:24 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 5y7k9_hk@temporary-mail.net at 2024-07-05 13:07:24.267062+00:00
+2024-07-05 18:37:26 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 5y7k9_hk@temporary-mail.net
+2024-07-05 18:37:26 - tracking.email_utils - INFO - email_utils.py: Email db entry created for dicahuv.soqalu@jollyfree.com at 2024-07-05 13:07:26.076990+00:00
+2024-07-05 18:37:27 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to dicahuv.soqalu@jollyfree.com
+2024-07-05 18:37:27 - tracking.email_utils - INFO - email_utils.py: Email db entry created for gerard@yemenfo.com at 2024-07-05 13:07:27.155170+00:00
+2024-07-05 18:37:28 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to gerard@yemenfo.com
+2024-07-05 18:37:28 - tracking.email_utils - INFO - email_utils.py: Email db entry created for lamoruze@pelagius.net at 2024-07-05 13:07:28.939771+00:00
+2024-07-05 18:37:30 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to lamoruze@pelagius.net
+2024-07-05 18:37:30 - tracking.email_utils - INFO - email_utils.py: Email db entry created for fivfpbqzg@emltmp.com at 2024-07-05 13:07:30.205262+00:00
+2024-07-05 18:37:31 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to fivfpbqzg@emltmp.com
+2024-07-05 18:37:31 - tracking.email_utils - INFO - email_utils.py: Email db entry created for jixamo8511@carspure.com at 2024-07-05 13:07:31.509938+00:00
+2024-07-05 18:37:32 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to jixamo8511@carspure.com
+2024-07-05 18:37:32 - tracking.email_utils - INFO - email_utils.py: Email db entry created for spamtestersai@maildrop.cc at 2024-07-05 13:07:32.817179+00:00
+2024-07-05 18:37:34 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to spamtestersai@maildrop.cc
+2024-07-05 18:37:34 - tracking.email_utils - INFO - email_utils.py: Email db entry created for mtkzvf@vobau.net at 2024-07-05 13:07:34.093501+00:00
+2024-07-05 18:37:35 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to mtkzvf@vobau.net
+2024-07-05 18:37:35 - tracking.urls - INFO - urls.py: PIXEL Request received for email singhal24a@gmail.com from ip: 74.125.151.197
+2024-07-05 18:37:35 - tracking.views - INFO - views.py/PIXEL: Request received for singhal24a@gmail.com from 74.125.151.197.
+2024-07-05 18:37:35 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 13:07:35.338959+00:00 | Mail sent: 2024-07-05 13:07:14.690590+00:00 | Difference: 0:00:20.648369
+2024-07-05 18:37:35 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 18:37:35 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 18:37:35 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 13:07:35.391762+00:00 | Mail sent: 2024-07-05 13:07:16.460007+00:00 | Difference: 0:00:18.931755
+2024-07-05 18:37:36 - tracking.urls - INFO - urls.py: PIXEL Request received for email mtkzvf@vobau.net from ip: 74.125.151.198
+2024-07-05 18:37:36 - tracking.views - INFO - views.py/PIXEL: Request received for mtkzvf@vobau.net from 74.125.151.198.
+2024-07-05 18:37:36 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 13:07:36.780090+00:00 | Mail sent: 2024-07-05 13:07:34.069021+00:00 | Difference: 0:00:02.711069
+2024-07-05 18:37:36 - tracking.views - WARNING - views.py/handle_tracking: First request received for mtkzvf@vobau.net with email_id 136 within 3 secs. Potential prefetching. Abandoning request!
+2024-07-05 18:37:36 - django.request - WARNING - Not Found: /track/de61f6ad0af04934a5909613be12e794/pixel.png
+2024-07-05 18:41:42 - tracking.email_utils - INFO - email_utils.py: Email db entry created for singhal24a@gmail.com at 2024-07-05 13:11:42.740502+00:00
+2024-07-05 18:41:43 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to singhal24a@gmail.com
+2024-07-05 18:41:43 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 13:11:43.891224+00:00
+2024-07-05 18:41:45 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 18:41:46 - tracking.urls - INFO - urls.py: PIXEL Request received for email singhal24a@gmail.com from ip: 74.125.151.199
+2024-07-05 18:41:46 - tracking.views - INFO - views.py/PIXEL: Request received for singhal24a@gmail.com from 74.125.151.199.
+2024-07-05 18:41:46 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 13:11:46.046522+00:00 | Mail sent: 2024-07-05 13:11:42.715519+00:00 | Difference: 0:00:03.331003
+2024-07-05 18:41:46 - tracking.views - WARNING - views.py/handle_tracking: First request received for singhal24a@gmail.com with email_id 137 within 3 secs. Potential prefetching. Abandoning request!
+2024-07-05 18:41:46 - django.request - WARNING - Not Found: /track/15233f6112dd45a6b5f637b095599bca/pixel.png
+2024-07-05 18:41:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.199
+2024-07-05 18:41:49 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.199.
+2024-07-05 18:41:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 13:11:49.251776+00:00 | Mail sent: 2024-07-05 13:11:43.869224+00:00 | Difference: 0:00:05.382552
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mukulchandail@yahoo.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mukulchandail@yahoo.com from 172.225.200.112.
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.099981+00:00 | Mail sent: 2024-07-05 13:04:17.507552+00:00 | Difference: 3:02:31.592429
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mukulchandail@gmail.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mukulchandail@gmail.com from 172.225.200.112.
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.162185+00:00 | Mail sent: 2024-07-05 08:47:41.030024+00:00 | Difference: 7:19:08.132161
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mukulchandail@yahoo.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mukulchandail@yahoo.com from 172.225.200.112.
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.210723+00:00 | Mail sent: 2024-07-05 08:47:42.711597+00:00 | Difference: 7:19:06.499126
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: CSS Request received for email mukulchandail@yahoo.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/CSS: Request received for mukulchandail@yahoo.com from 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.256996+00:00 | Mail sent: 2024-07-05 08:47:42.711597+00:00 | Difference: 7:19:06.545399
+2024-07-05 21:36:49 - tracking.views - WARNING - views.py/handle_tracking: Request received for for mukulchandail@yahoo.com with email_id 47 within 2 secs. Random fetching. Abandoning request!
+2024-07-05 21:36:49 - django.request - WARNING - Not Found: /track/8bf1e08da9c640f2a5373c38f101051e/style.css
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: CSS Request received for email mukulchandail@gmail.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/CSS: Request received for mukulchandail@gmail.com from 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.283149+00:00 | Mail sent: 2024-07-05 08:47:41.030024+00:00 | Difference: 7:19:08.253125
+2024-07-05 21:36:49 - tracking.views - WARNING - views.py/handle_tracking: Request received for for mukulchandail@gmail.com with email_id 46 within 2 secs. Random fetching. Abandoning request!
+2024-07-05 21:36:49 - django.request - WARNING - Not Found: /track/eb643fc349db4d6c9473900b1dcd58ea/style.css
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mukulchandail@gmail.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mukulchandail@gmail.com from 172.225.200.112.
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.308750+00:00 | Mail sent: 2024-07-05 13:04:15.922497+00:00 | Difference: 3:02:33.386253
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mukulchandail@gmail.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mukulchandail@gmail.com from 172.225.200.112.
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.449621+00:00 | Mail sent: 2024-07-05 12:51:12.059589+00:00 | Difference: 3:15:37.390032
+2024-07-05 21:36:49 - tracking.urls - INFO - urls.py: PIXEL Request received for email mukulchandail@yahoo.com from ip: 172.225.200.112
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/PIXEL: Request received for mukulchandail@yahoo.com from 172.225.200.112.
+2024-07-05 21:36:49 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:06:49.513584+00:00 | Mail sent: 2024-07-05 12:51:13.238652+00:00 | Difference: 3:15:36.274932
+2024-07-05 21:37:26 - django.request - WARNING - Not Found: /
+2024-07-05 21:37:53 - django.request - ERROR - Internal Server Error: /send-tracked-email/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/local/lib/python3.10/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.10/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 135, in send_tracked_email_view
+    results = await asyncio.gather(*tasks)
+  File "/home/1chandailrc1/email_tracker/tracking/views.py", line 118, in send_email
+    success = await sync_to_async(send_tracked_email)(recipient, subject, body)
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 528, in sync_to_async
+    return SyncToAsync(
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 364, in __init__
+    raise TypeError("sync_to_async can only be applied to sync functions.")
+TypeError: sync_to_async can only be applied to sync functions.
+2024-07-05 21:37:54 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 21:45:23 - django.request - WARNING - Not Found: /
+2024-07-05 21:45:37 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-05 21:46:36 - tracking.email_utils - INFO - email_utils.py: Email db entry created for 1chandailrc1@gmail.com at 2024-07-05 16:16:36.543426+00:00
+2024-07-05 21:46:37 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to 1chandailrc1@gmail.com
+2024-07-05 21:46:37 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrc@gmail.com at 2024-07-05 16:16:37.773833+00:00
+2024-07-05 21:46:38 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrc@gmail.com
+2024-07-05 21:46:38 - tracking.email_utils - INFO - email_utils.py: Email db entry created for chandailrcsai@gmail.com at 2024-07-05 16:16:38.998707+00:00
+2024-07-05 21:46:40 - tracking.email_utils - INFO - email_utils.py: Email sent successfully to chandailrcsai@gmail.com
+2024-07-05 21:46:42 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrcsai@gmail.com from ip: 74.125.151.198
+2024-07-05 21:46:42 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrcsai@gmail.com from 74.125.151.198.
+2024-07-05 21:46:42 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-05 16:16:42.687288+00:00 | Mail sent: 2024-07-05 16:16:38.980848+00:00 | Difference: 0:00:03.706440
+2024-07-05 21:46:42 - tracking.views - WARNING - views.py/handle_tracking: First request received for chandailrcsai@gmail.com with email_id 141 within 3 secs. Potential prefetching. Abandoning request!
+2024-07-05 21:46:42 - django.request - WARNING - Not Found: /track/6e89297492ac454d9fca388a1ad31c05/pixel.png
+2024-07-05 21:47:44 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-06 08:21:16 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.160
+2024-07-06 08:21:16 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.160.
+2024-07-06 08:21:16 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-06 02:51:16.530641+00:00 | Mail sent: 2024-07-05 16:16:36.525850+00:00 | Difference: 10:34:40.004791
+2024-07-06 18:31:12 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.160
+2024-07-06 18:31:12 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.160.
+2024-07-06 18:31:12 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-06 13:01:12.311213+00:00 | Mail sent: 2024-07-05 08:47:37.489132+00:00 | Difference: 1 day, 4:13:34.822081
+2024-07-06 18:31:14 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.174
+2024-07-06 18:31:14 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.174.
+2024-07-06 18:31:14 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-06 13:01:14.510284+00:00 | Mail sent: 2024-07-05 10:09:52.307580+00:00 | Difference: 1 day, 2:51:22.202704
+2024-07-06 18:31:14 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-06 18:31:15 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-06 18:32:39 - tracking.urls - INFO - urls.py: PIXEL Request received for email spamtestersai@maildrop.cc from ip: 49.43.99.98
+2024-07-06 18:32:39 - tracking.views - INFO - views.py/PIXEL: Request received for spamtestersai@maildrop.cc from 49.43.99.98.
+2024-07-06 18:32:39 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-06 13:02:39.386342+00:00 | Mail sent: 2024-07-05 13:07:32.794777+00:00 | Difference: 23:55:06.591565
+2024-07-06 23:50:19 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.174
+2024-07-06 23:50:19 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.174.
+2024-07-06 23:50:19 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-06 18:20:19.204632+00:00 | Mail sent: 2024-07-05 08:47:37.489132+00:00 | Difference: 1 day, 9:32:41.715500
+2024-07-07 00:35:14 - django.request - WARNING - Not Found: /pixel.png
+2024-07-07 16:10:25 - tracking.urls - INFO - urls.py: PIXEL Request received for email 1chandailrc1@gmail.com from ip: 66.249.84.160
+2024-07-07 16:10:25 - tracking.views - INFO - views.py/PIXEL: Request received for 1chandailrc1@gmail.com from 66.249.84.160.
+2024-07-07 16:10:25 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-07 10:40:25.197487+00:00 | Mail sent: 2024-07-05 10:09:52.307580+00:00 | Difference: 2 days, 0:30:32.889907
+2024-07-07 16:10:26 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.174
+2024-07-07 16:10:26 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.174.
+2024-07-07 16:10:26 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-07 10:40:26.261851+00:00 | Mail sent: 2024-07-05 08:47:37.489132+00:00 | Difference: 2 days, 1:52:48.772719
+2024-07-07 16:10:37 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-07 16:10:37 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-07 17:44:53 - django.request - WARNING - Not Found: /
+2024-07-07 17:47:16 - django.request - WARNING - Not Found: /
+2024-07-07 17:48:13 - django.request - WARNING - Not Found: /
+2024-07-07 17:50:35 - django.request - WARNING - Not Found: /
+2024-07-08 10:33:53 - tracking.urls - INFO - urls.py: PIXEL Request received for email chandailrc@gmail.com from ip: 66.249.84.174
+2024-07-08 10:33:53 - tracking.views - INFO - views.py/PIXEL: Request received for chandailrc@gmail.com from 66.249.84.174.
+2024-07-08 10:33:53 - tracking.views - INFO - views.py/handle_tracking: Current time: 2024-07-08 05:03:53.852912+00:00 | Mail sent: 2024-07-05 08:47:37.489132+00:00 | Difference: 2 days, 20:16:16.363780
+2024-07-08 10:33:55 - django.request - WARNING - Not Found: /favicon.ico
+2024-07-08 10:33:55 - django.request - WARNING - Not Found: /favicon.ico

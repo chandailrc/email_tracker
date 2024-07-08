@@ -3,25 +3,38 @@
 from django.urls import path
 from .views import *
 import logging
+from .models import TrackingPixelToken
 
 logger = logging.getLogger(__name__)
 
 def log_request_pixel(view_func):
-    def wrapper(request, *args, **kwargs):
-        logger.info(f"urls.py: PIXEL Request received for email with id: {request}")
-        return view_func(request, *args, **kwargs)
+    def wrapper(request, token, *args, **kwargs):
+        try:
+            recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+            logger.info(f"urls.py: PIXEL Request received for email {recipient} from ip: {get_client_ip(request)}")
+        except TrackingPixelToken.DoesNotExist:
+            logger.error(f"urls.py: PIXEL Request received with invalid token {token} from ip: {get_client_ip(request)}")
+        return view_func(request, token, *args, **kwargs)
     return wrapper
 
 def log_request_css(view_func):
-    def wrapper(request, *args, **kwargs):
-        logger.info(f"urls.py: CSS Request received for email with id: {request}")
-        return view_func(request, *args, **kwargs)
+    def wrapper(request, token, *args, **kwargs):
+        try:
+            recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+            logger.info(f"urls.py: CSS Request received for email {recipient} from ip: {get_client_ip(request)}")
+        except TrackingPixelToken.DoesNotExist:
+            logger.error(f"urls.py: CSS Request received with invalid token {token} from ip: {get_client_ip(request)}")
+        return view_func(request, token, *args, **kwargs)
     return wrapper
 
 def log_request_link(view_func):
-    def wrapper(request, *args, **kwargs):
-        logger.info(f"urls.py: LINK Request received for email with id: {request}")
-        return view_func(request, *args, **kwargs)
+    def wrapper(request, token, *args, **kwargs):
+        try:
+            recipient = TrackingPixelToken.objects.get(token=token).email.recipient
+            logger.info(f"urls.py: LINK Request received for email {recipient} from ip: {get_client_ip(request)}")
+        except TrackingPixelToken.DoesNotExist:
+            logger.error(f"urls.py: LINK Request received with invalid token {token} from ip: {get_client_ip(request)}")
+        return view_func(request, token, *args, **kwargs)
     return wrapper
 
 urlpatterns = [
